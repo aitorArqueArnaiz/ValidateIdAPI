@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "hyoB62r1h0Sd265PpBotaLqLJdsuJjSkYIa4MuTTpDM11wh34oErK8lH5/S6OpFXVRBcwigBRwHD7ly3Ra4dhA==",
+  "dgSpecHash": "onAvv8JroKJS6iE27FApTXadTuHv+gwqRLBjxWTPozSzuXS+zIFIVp2quzlEApUtbzxXyHTUsm2vBnETpNYTFw==",
   "success": true,
   "projectFilePath": "C:\\Users\\aitor\\Downloads\\ValidateIdAPI\\ValidateIdAPI\\ValidateId.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aitor\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\aitor\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\aitor\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512",
+    "C:\\Users\\aitor\\.nuget\\packages\\serilog\\2.10.0\\serilog.2.10.0.nupkg.sha512",
     "C:\\Users\\aitor\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\aitor\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
     "C:\\Users\\aitor\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",

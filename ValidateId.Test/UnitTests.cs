@@ -2,7 +2,7 @@
 
 namespace ValidateId.Test
 {
-    public class Class1
+    public class UnitTests
     {
     }
 }
