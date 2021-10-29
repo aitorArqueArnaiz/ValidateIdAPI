@@ -14,8 +14,8 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_validateid.api$
     volumes:
-      - C:\Users\aitor\source\repos\ValidateIdAPI\ValidateIdAPI:/app
-      - C:\Users\aitor\source\repos\ValidateIdAPI\.:/src
+      - C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI:/app
+      - C:\Users\aitor\Downloads\ValidateIdAPI\.:/src
       - C:\Users\aitor\vsdbg\vs2017u5:/remote_debugger:rw
 #$nuget_volume_mapping_validateid.api$
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro

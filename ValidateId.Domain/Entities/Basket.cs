@@ -1,12 +1,11 @@
-﻿using System;
+﻿
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ValidateId.Domain.Entities
 {
-    class Basket
+    public class Basket
     {
+        public string _creationDate { get; set; }
+        public List<int, double> _units { get; set; }
     }
 }
