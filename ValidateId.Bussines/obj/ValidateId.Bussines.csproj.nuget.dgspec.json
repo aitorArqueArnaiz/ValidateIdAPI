@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aitor\\source\\repos\\ValidateIdAPI\\ValidateId.Bussines\\ValidateId.Bussines.csproj": {}
+    "C:\\Users\\aitor\\Downloads\\ValidateIdAPI\\ValidateId.Bussines\\ValidateId.Bussines.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aitor\\source\\repos\\ValidateIdAPI\\ValidateId.Bussines\\ValidateId.Bussines.csproj": {
+    "C:\\Users\\aitor\\Downloads\\ValidateIdAPI\\ValidateId.Bussines\\ValidateId.Bussines.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aitor\\source\\repos\\ValidateIdAPI\\ValidateId.Bussines\\ValidateId.Bussines.csproj",
+        "projectUniqueName": "C:\\Users\\aitor\\Downloads\\ValidateIdAPI\\ValidateId.Bussines\\ValidateId.Bussines.csproj",
         "projectName": "ValidateId.Bussines",
-        "projectPath": "C:\\Users\\aitor\\source\\repos\\ValidateIdAPI\\ValidateId.Bussines\\ValidateId.Bussines.csproj",
+        "projectPath": "C:\\Users\\aitor\\Downloads\\ValidateIdAPI\\ValidateId.Bussines\\ValidateId.Bussines.csproj",
         "packagesPath": "C:\\Users\\aitor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aitor\\source\\repos\\ValidateIdAPI\\ValidateId.Bussines\\obj\\",
+        "outputPath": "C:\\Users\\aitor\\Downloads\\ValidateIdAPI\\ValidateId.Bussines\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\aitor\\AppData\\Roaming\\NuGet\\NuGet.Config",

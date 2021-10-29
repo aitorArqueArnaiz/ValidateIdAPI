@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aitor\\source\\repos\\ValidateIdAPI\\ValidateId.Infrastructure\\ValidateId.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\aitor\\Downloads\\ValidateIdAPI\\ValidateId.Infrastructure\\ValidateId.Infrastructure.csproj",
       "projectName": "ValidateId.Infrastructure",
-      "projectPath": "C:\\Users\\aitor\\source\\repos\\ValidateIdAPI\\ValidateId.Infrastructure\\ValidateId.Infrastructure.csproj",
+      "projectPath": "C:\\Users\\aitor\\Downloads\\ValidateIdAPI\\ValidateId.Infrastructure\\ValidateId.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\aitor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aitor\\source\\repos\\ValidateIdAPI\\ValidateId.Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\aitor\\Downloads\\ValidateIdAPI\\ValidateId.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\aitor\\AppData\\Roaming\\NuGet\\NuGet.Config",

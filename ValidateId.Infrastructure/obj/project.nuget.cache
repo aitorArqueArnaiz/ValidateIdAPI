@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6w5udg0+0kE3wyqhHKJ45qt+Gym9z504vmZsNJL9L8RUnrkQaiBO5zaLhjpdTVZsKr9StgApx7CZwl6PYpEeaw==",
+  "dgSpecHash": "v5iG6Es5xNxJ7tYAIf/QYxFkauwMkLA8QO18HqpjiQeGlVs+njpnFWNia2w6/9P2uVx5kxOi9wDy46k+yDlUpA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aitor\\source\\repos\\ValidateIdAPI\\ValidateId.Infrastructure\\ValidateId.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\aitor\\Downloads\\ValidateIdAPI\\ValidateId.Infrastructure\\ValidateId.Infrastructure.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

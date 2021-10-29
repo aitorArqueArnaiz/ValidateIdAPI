@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aitor\\source\\repos\\ValidateIdAPI\\ValidateIdAPI\\ValidateId.API.csproj": {}
+    "C:\\Users\\aitor\\Downloads\\ValidateIdAPI\\ValidateIdAPI\\ValidateId.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aitor\\source\\repos\\ValidateIdAPI\\ValidateIdAPI\\ValidateId.API.csproj": {
+    "C:\\Users\\aitor\\Downloads\\ValidateIdAPI\\ValidateIdAPI\\ValidateId.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aitor\\source\\repos\\ValidateIdAPI\\ValidateIdAPI\\ValidateId.API.csproj",
+        "projectUniqueName": "C:\\Users\\aitor\\Downloads\\ValidateIdAPI\\ValidateIdAPI\\ValidateId.API.csproj",
         "projectName": "ValidateId.API",
-        "projectPath": "C:\\Users\\aitor\\source\\repos\\ValidateIdAPI\\ValidateIdAPI\\ValidateId.API.csproj",
+        "projectPath": "C:\\Users\\aitor\\Downloads\\ValidateIdAPI\\ValidateIdAPI\\ValidateId.API.csproj",
         "packagesPath": "C:\\Users\\aitor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aitor\\source\\repos\\ValidateIdAPI\\ValidateIdAPI\\obj\\",
+        "outputPath": "C:\\Users\\aitor\\Downloads\\ValidateIdAPI\\ValidateIdAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\aitor\\AppData\\Roaming\\NuGet\\NuGet.Config",
