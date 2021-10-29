@@ -5,9 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Base\" />
-    <Folder Include="DTOs\" />
-    <Folder Include="Entities\" />
+    <Folder Include="DTOs\Basket\" />
   </ItemGroup>
 
 </Project>

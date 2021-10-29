@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Yy44OYF15v1/snf28w1WVzZvJALqKtsBue3JuipL6GJIPYqUzyS6ktxq9oJ8uWQckBsnvfaUxafUHGfwcbzEyw==",
+  "dgSpecHash": "r0GDPX7dNQhGoByVS0/Btg0g2qmYxUqze4YpX+Bc0RGtQinslBruDw+bFbseKR+DDQtEEE3rxFSJKOw0mcm5xA==",
   "success": true,
   "projectFilePath": "C:\\Users\\aitor\\Downloads\\ValidateIdAPI\\ValidateId.Test\\ValidateId.Test.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\aitor\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\aitor\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
+    "C:\\Users\\aitor\\.nuget\\packages\\nunit\\3.13.2\\nunit.3.13.2.nupkg.sha512",
+    "C:\\Users\\aitor\\.nuget\\packages\\nunit3testadapter\\4.0.0\\nunit3testadapter.4.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
