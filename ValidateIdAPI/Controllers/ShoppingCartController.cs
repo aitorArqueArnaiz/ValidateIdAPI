@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using ValidateId.Bussines.Interfaces.Basket;
-using ValidateId.Bussines.Services.Basket;
+using ValidateId.Domain.DTOs.Basket;
 using ValidateId.Domain.Entities;
 
 namespace ValidateIdAPI.Controllers
@@ -24,12 +24,13 @@ namespace ValidateIdAPI.Controllers
         }
 
         [HttpPost]
-        public ActionResult<ShoppingBasket> AddItem([FromBody] ShoppingBasket shoppingBasket)
+        public ActionResult<AdduserBasketResponse> AddItem([FromBody] ShoppingBasket shoppingBasket)
         {
-            ShoppingBasket shoppingBasketAddedToUser;
+            AdduserBasketResponse shoppingBasketAddedToUser;
             try
             {
-                shoppingBasketAddedToUser = _basketService.AddShoppingBasketToUser(shoppingBasket);
+                AddUserBasketRequest addShoppingBasketRequest = new AddUserBasketRequest();
+                shoppingBasketAddedToUser = _basketService.AddShoppingBasketToUser(addShoppingBasketRequest);
             }
             catch(Exception error)
             {

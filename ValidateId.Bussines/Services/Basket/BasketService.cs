@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using ValidateId.Bussines.Interfaces.Basket;
+using ValidateId.Domain.DTOs.Basket;
 using ValidateId.Domain.Entities;
-using ValidateId.Infrastructure.Data.Repositories;
 using ValidateId.Infrastructure.Interfaces;
 
 namespace ValidateId.Bussines.Services.Basket
@@ -27,9 +27,9 @@ namespace ValidateId.Bussines.Services.Basket
 
         #region Class methods
 
-        public ShoppingBasket AddShoppingBasketToUser(ShoppingBasket shoppingBasket)
+        public AdduserBasketResponse AddShoppingBasketToUser(AddUserBasketRequest shoppingBasketRequest)
         {
-            return null;
+            return new AdduserBasketResponse();
         }
 
         public List<ShoppingBasket> GetAllShoppingBaskets()
