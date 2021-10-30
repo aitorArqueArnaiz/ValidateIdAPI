@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using ValidateId.Infrastructure.Interfaces;
-using NPOI.SS.Formula.Functions;
 
 namespace ValidateId.Infrastructure.Data.Repositories
 {
@@ -9,7 +8,7 @@ namespace ValidateId.Infrastructure.Data.Repositories
     {
         #region Class variables
 
-        public DbSet<T> ShoppingBaskets { get; set; }
+        public DbSet<dynamic> ShoppingBaskets { get; set; }
 
         #endregion
 
@@ -28,14 +27,14 @@ namespace ValidateId.Infrastructure.Data.Repositories
         {
         }
 
-        public List<T> GetShoppingBaskets()
+        public List<dynamic> GetShoppingBaskets()
         {
             return null;
         }
 
-        public T AddShoppingBasket()
+        public bool AddShoppingBasket()
         {
-            return null;
+            return true;
         }
 
         #endregion

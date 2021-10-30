@@ -29,7 +29,12 @@ namespace ValidateIdAPI.Controllers
             AdduserBasketResponse shoppingBasketAddedToUser;
             try
             {
-                AddUserBasketRequest addShoppingBasketRequest = new AddUserBasketRequest();
+                AddUserBasketRequest addShoppingBasketRequest = new AddUserBasketRequest()
+                {
+                    CreationDate = shoppingBasket.Basket.CreationDate,
+                    Units = shoppingBasket.Basket.Units,
+                    Total = shoppingBasket.Basket.Total
+                };
                 shoppingBasketAddedToUser = _basketService.AddShoppingBasketToUser(addShoppingBasketRequest);
             }
             catch(Exception error)
