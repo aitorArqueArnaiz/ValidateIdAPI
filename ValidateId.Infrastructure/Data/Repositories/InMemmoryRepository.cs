@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.Dynamic;
+using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using ValidateId.Infrastructure.Interfaces;
 
@@ -29,11 +31,14 @@ namespace ValidateId.Infrastructure.Data.Repositories
 
         public List<dynamic> GetShoppingBaskets()
         {
-            return null;
+            return _shoppingBaskets.Local.ToList();
         }
 
         public bool AddShoppingBasket(dynamic shoppingBasket)
         {
+            dynamic userBasket = new ExpandoObject();
+            _shoppingBaskets.Add(userBasket);
+
             return true;
         }
 
