@@ -1,6 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using ValidateId.Bussines.Services.Basket;
 using ValidateId.Domain.Entities;
+using ValidateId.Infrastructure.Data.Repositories;
 
 namespace ValidateIdAPI.Controllers
 {
@@ -9,22 +14,45 @@ namespace ValidateIdAPI.Controllers
     public class ShoppingCartController : ControllerBase
     {
         private readonly ILogger<ShoppingCartController> _logger;
+        private readonly InMemmoryRepository _dbContext;
+        private readonly BasketService _basketService;
 
-        public ShoppingCartController(ILogger<ShoppingCartController> logger)
+        public ShoppingCartController(ILogger<ShoppingCartController> logger, 
+            InMemmoryRepository dbContext,
+            BasketService basketService)
         {
             _logger = logger;
+            _dbContext = dbContext;
+            _basketService = basketService;
         }
 
         [HttpPost]
-        public ActionResult<bool> AddItem([FromBody] ShoppingBasket shoppingBasket)
+        public ActionResult<ShoppingBasket> AddItem([FromBody] ShoppingBasket shoppingBasket)
         {
+            try
+            {
+                _basketService.AddShoppingBasketToUser(shoppingBasket);
+            }
+            catch(Exception error)
+            {
+                Serilog.Log.ForContext<ShoppingCartController>().Error($"Error ocurred during add basket to user operation {error.Message}");
+            }
             return Ok();
         }
 
         [HttpGet]
-        public ActionResult<bool> LogShoppingBaskets ()
+        public async Task<IActionResult> Get()
         {
-            return Ok();
+            List<ShoppingBasket> baskets = new List<ShoppingBasket>() { };
+            try
+            {
+                baskets = _basketService.GetAllShoppingBaskets();
+            }
+            catch(Exception error)
+            {
+                Serilog.Log.ForContext<ShoppingCartController>().Error($"Error ocurred during get all baskets operation {error.Message}");
+            }
+            return Ok(baskets);
         }
     }
 }

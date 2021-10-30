@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using Microsoft.EntityFrameworkCore;
+using NUnit.Framework;
 using ValidateId.Domain.Entities;
 using ValidateId.Infrastructure.Data.Repositories;
 
@@ -10,6 +11,7 @@ namespace ValidateId.Test
         #region Class Variables
 
         private ShoppingBasket _shoppingBasket;
+        InMemmoryRepository _context;
 
         #endregion
 
@@ -19,12 +21,15 @@ namespace ValidateId.Test
         public void SetUp()
         {
             _shoppingBasket = new ShoppingBasket(new User(), new Basket());
+            _context = new InMemmoryRepository(null);
+
         }
 
         [TearDown]
         public void TearDown()
         {
             _shoppingBasket = null;
+            _context = null;
         }
 
         #endregion
@@ -34,13 +39,14 @@ namespace ValidateId.Test
         [Test]
         [Author("Aitor Arqué Arnaiz")]
         [Description("Test intended to add a new item to a user basket.")]
-        public void AddTestData(InMemmoryRepository context)
+        public void AddShoppingBasket_ToUser_Test()
         {
-            // Assert
+            // Arrange
 
             // Act
 
-            // Arrange
+            // Assert
+            Assert.True(true);
         }
 
         #endregion
