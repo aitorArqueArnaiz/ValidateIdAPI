@@ -12,13 +12,13 @@ namespace ValidateId.Bussines.Services.Basket
 
         #region Class variables
 
-            private readonly IInMemmoryRepository _basketRepository;
+            private readonly IRepository _basketRepository;
 
         #endregion
 
         #region Class constructor
 
-        public BasketService(IInMemmoryRepository repository) : base()
+        public BasketService(IRepository repository) : base()
         {
             _basketRepository = repository ?? throw new ArgumentNullException(nameof(repository));
         }

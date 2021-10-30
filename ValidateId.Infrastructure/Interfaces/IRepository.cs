@@ -2,7 +2,7 @@
 
 namespace ValidateId.Infrastructure.Interfaces
 {
-    public interface IInMemmoryRepository
+    public interface IRepository
     {
 
         /// <summary>Method that creates the first shopping basket.</summary>

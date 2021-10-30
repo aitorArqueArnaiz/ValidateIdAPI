@@ -4,7 +4,7 @@ using ValidateId.Infrastructure.Interfaces;
 
 namespace ValidateId.Infrastructure.Data.Repositories
 {
-    public class InMemmoryRepository : DbContext, IInMemmoryRepository
+    public class InMemmoryRepository : DbContext, IRepository
     {
         #region Class variables
 
