@@ -5,6 +5,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using ValidateId.Bussines.Interfaces.Basket;
+using ValidateId.Bussines.Services.Basket;
 using ValidateId.Infrastructure.Data.Repositories;
 
 namespace ValidateIdAPI
@@ -28,6 +30,10 @@ namespace ValidateIdAPI
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ValidateIdAPI", Version = "v1" });
             });
+
+            // Add application services.
+            var contextOptions = new DbContextOptionsBuilder<InMemmoryRepository>();
+            services.Add(new ServiceDescriptor(typeof(IBasket), new BasketService(new InMemmoryRepository(contextOptions.Options))));
 
             // Add framework services.
             services.AddMvc(options =>

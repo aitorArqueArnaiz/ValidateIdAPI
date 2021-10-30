@@ -14,16 +14,13 @@ namespace ValidateIdAPI.Controllers
     public class ShoppingCartController : ControllerBase
     {
         private readonly ILogger<ShoppingCartController> _logger;
-        private readonly InMemmoryRepository _dbContext;
         private readonly BasketService _basketService;
 
         public ShoppingCartController(ILogger<ShoppingCartController> logger, 
-            InMemmoryRepository dbContext,
             BasketService basketService)
         {
             _logger = logger;
-            _dbContext = dbContext;
-            _basketService = basketService;
+            _basketService = basketService ?? throw new ArgumentNullException(nameof(basketService));
         }
 
         [HttpPost]
@@ -36,7 +33,7 @@ namespace ValidateIdAPI.Controllers
             }
             catch(Exception error)
             {
-                Serilog.Log.ForContext<ShoppingCartController>().Error($"Error ocurred during add basket to user operation {error.Message}");
+                _logger.LogError($"Error ocurred during add basket to user operation {error.Message}");
                 throw new Exception(error.Message);
             }
             return Ok(shoppingBasketAddedToUser);
@@ -52,7 +49,7 @@ namespace ValidateIdAPI.Controllers
             }
             catch(Exception error)
             {
-                Serilog.Log.ForContext<ShoppingCartController>().Error($"Error ocurred during get all baskets operation {error.Message}");
+                _logger.LogError($"Error ocurred during get all baskets operation {error.Message}");
                 throw new Exception(error.Message);
             }
             return Ok(baskets);
