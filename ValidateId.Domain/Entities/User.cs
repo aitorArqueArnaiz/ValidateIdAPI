@@ -1,8 +1,9 @@
 ﻿
+using ValidateId.Domain.Base;
+
 namespace ValidateId.Domain.Entities
 {
-    public class User
+    public class User : BaseEntity
     {
-        public int _userId { get; set; }
     }
 }

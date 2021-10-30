@@ -3,13 +3,13 @@ namespace ValidateId.Domain.Entities
 {
     public class ShoppingBasket
     {
-        public User _user;
-        public Basket _basket;
+        public User User;
+        public Basket Basket;
 
         public ShoppingBasket(User user, Basket basket)
         {
-            _user = user;
-            _basket = basket;
+            User = user;
+            Basket = basket;
         }
     }
 }
