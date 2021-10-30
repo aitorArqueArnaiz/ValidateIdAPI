@@ -1,10 +1,15 @@
 ﻿
+using Newtonsoft.Json;
+
 namespace ValidateId.Domain.Entities
 {
     public class ShoppingBasket
     {
-        public User User;
-        public Basket Basket;
+        [JsonProperty("User")]
+        public User User { get; set; }
+
+        [JsonProperty("Basket")]
+        public Basket Basket { get; set; }
 
         public ShoppingBasket(User user, Basket basket)
         {

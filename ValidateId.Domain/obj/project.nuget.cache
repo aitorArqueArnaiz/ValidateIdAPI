@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "PORMj/VpZRXh7p5zBd9K6dp+9kEoVwOrRr+8LkUY3v7CTmXWooxjnw6DuCG3b0xhslGyF9wDSrBlcGmV7pQjeQ==",
+  "dgSpecHash": "RcYePCeQWNJnA784e08aDfjd+aJWKGGHqW0z5STuqY6kZVw+yjZ4gighhI//7fXWiKkL0nbJ737rW/j/4pUGZA==",
   "success": true,
   "projectFilePath": "C:\\Users\\aitor\\Downloads\\ValidateIdAPI\\ValidateId.Domain\\ValidateId.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\aitor\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
