@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using ValidateId.Domain.Entities;
 using ValidateId.Infrastructure.Data.Repositories;
 
 namespace ValidateId.Test
@@ -7,6 +8,9 @@ namespace ValidateId.Test
     public class UnitTests
     {
         #region Class Variables
+
+        private ShoppingBasket _shoppingBasket;
+
         #endregion
 
         #region Class Start and tear down
@@ -14,11 +18,13 @@ namespace ValidateId.Test
         [SetUp]
         public void SetUp()
         {
+            _shoppingBasket = new ShoppingBasket(new User(), new Basket());
         }
 
         [TearDown]
         public void TearDown()
         {
+            _shoppingBasket = null;
         }
 
         #endregion

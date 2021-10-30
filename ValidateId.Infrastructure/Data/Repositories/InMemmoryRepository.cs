@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
-using System.Linq;
 using ValidateId.Infrastructure.Interfaces;
 using NPOI.SS.Formula.Functions;
 

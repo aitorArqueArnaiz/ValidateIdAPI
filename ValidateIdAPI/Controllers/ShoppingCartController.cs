@@ -1,14 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using ValidateId.Domain.Entities;
 
 namespace ValidateIdAPI.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/validateid")]
     public class ShoppingCartController : ControllerBase
     {
         private readonly ILogger<ShoppingCartController> _logger;
@@ -19,7 +16,13 @@ namespace ValidateIdAPI.Controllers
         }
 
         [HttpPost]
-        public ActionResult<bool> AddItem()
+        public ActionResult<bool> AddItem([FromBody] ShoppingBasket shoppingBasket)
+        {
+            return Ok();
+        }
+
+        [HttpGet]
+        public ActionResult<bool> LogShoppingBaskets ()
         {
             return Ok();
         }
