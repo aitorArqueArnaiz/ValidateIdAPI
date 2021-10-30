@@ -4,7 +4,7 @@ using ValidateId.Domain.Entities;
 
 namespace ValidateId.Bussines.Interfaces.Basket
 {
-    public interface IBasket
+    public interface IBasketService
     {
         /// <summary>Method that gets all the shopping baskets existing in the current in memmory data base.</summary>
         /// <param name="shoppingBasket">The shopping basket to be added for a given user.</param>

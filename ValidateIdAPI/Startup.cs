@@ -33,7 +33,7 @@ namespace ValidateIdAPI
 
             // Add application services.
             var contextOptions = new DbContextOptionsBuilder<InMemmoryRepository>();
-            services.Add(new ServiceDescriptor(typeof(IBasket), new BasketService(new InMemmoryRepository(contextOptions.Options))));
+            services.Add(new ServiceDescriptor(typeof(IBasketService), new BasketService(new InMemmoryRepository(contextOptions.Options))));
 
             // Add framework services.
             services.AddMvc(options =>

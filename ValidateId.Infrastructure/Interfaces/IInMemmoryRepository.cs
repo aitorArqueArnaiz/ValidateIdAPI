@@ -14,7 +14,7 @@ namespace ValidateId.Infrastructure.Interfaces
 
         /// <summary>Method thatadds a new user basket into current in memmory data base.</summary>
         /// <returns>The list of all shopping baskets/products.</returns>
-        bool AddShoppingBasket();
+        bool AddShoppingBasket(dynamic shoppingBasket);
 
     }
 }

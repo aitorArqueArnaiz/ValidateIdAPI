@@ -8,7 +8,7 @@ namespace ValidateId.Infrastructure.Data.Repositories
     {
         #region Class variables
 
-        public DbSet<dynamic> ShoppingBaskets { get; set; }
+        public DbSet<dynamic> _shoppingBaskets { get; set; }
 
         #endregion
 
@@ -32,7 +32,7 @@ namespace ValidateId.Infrastructure.Data.Repositories
             return null;
         }
 
-        public bool AddShoppingBasket()
+        public bool AddShoppingBasket(dynamic shoppingBasket)
         {
             return true;
         }

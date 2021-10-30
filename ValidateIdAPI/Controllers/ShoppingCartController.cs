@@ -14,10 +14,10 @@ namespace ValidateIdAPI.Controllers
     public class ShoppingCartController : ControllerBase
     {
         private readonly ILogger<ShoppingCartController> _logger;
-        private readonly IBasket _basketService;
+        private readonly IBasketService _basketService;
 
         public ShoppingCartController(ILogger<ShoppingCartController> logger, 
-            IBasket basketService)
+            IBasketService basketService)
         {
             _logger = logger;
             _basketService = basketService ?? throw new ArgumentNullException(nameof(basketService));

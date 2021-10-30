@@ -7,7 +7,7 @@ using ValidateId.Infrastructure.Interfaces;
 
 namespace ValidateId.Bussines.Services.Basket
 {
-    public class BasketService : IBasket
+    public class BasketService : IBasketService
     {
 
         #region Class variables
@@ -20,7 +20,7 @@ namespace ValidateId.Bussines.Services.Basket
 
         public BasketService(IInMemmoryRepository repository) : base()
         {
-            _basketRepository = (repository ?? throw new ArgumentNullException(nameof(repository)));
+            _basketRepository = repository ?? throw new ArgumentNullException(nameof(repository));
         }
 
         #endregion

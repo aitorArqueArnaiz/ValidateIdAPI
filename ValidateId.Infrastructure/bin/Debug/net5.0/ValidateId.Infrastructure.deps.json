@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v5.0": {
       "ValidateId.Infrastructure/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.11",
           "Microsoft.EntityFrameworkCore.InMemory": "5.0.11",
           "NPOI": "2.5.5"
         },
