@@ -29,21 +29,23 @@ namespace ValidateIdAPI.Controllers
         [HttpPost]
         public ActionResult<ShoppingBasket> AddItem([FromBody] ShoppingBasket shoppingBasket)
         {
+            ShoppingBasket shoppingBasketAddedToUser;
             try
             {
-                _basketService.AddShoppingBasketToUser(shoppingBasket);
+                shoppingBasketAddedToUser = _basketService.AddShoppingBasketToUser(shoppingBasket);
             }
             catch(Exception error)
             {
                 Serilog.Log.ForContext<ShoppingCartController>().Error($"Error ocurred during add basket to user operation {error.Message}");
+                throw new Exception(error.Message);
             }
-            return Ok();
+            return Ok(shoppingBasketAddedToUser);
         }
 
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            List<ShoppingBasket> baskets = new List<ShoppingBasket>() { };
+            List<ShoppingBasket> baskets = new() { };
             try
             {
                 baskets = _basketService.GetAllShoppingBaskets();
@@ -51,6 +53,7 @@ namespace ValidateIdAPI.Controllers
             catch(Exception error)
             {
                 Serilog.Log.ForContext<ShoppingCartController>().Error($"Error ocurred during get all baskets operation {error.Message}");
+                throw new Exception(error.Message);
             }
             return Ok(baskets);
         }
