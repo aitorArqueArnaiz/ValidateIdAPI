@@ -3,9 +3,9 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using ValidateId.Bussines.Interfaces.Basket;
 using ValidateId.Bussines.Services.Basket;
 using ValidateId.Domain.Entities;
-using ValidateId.Infrastructure.Data.Repositories;
 
 namespace ValidateIdAPI.Controllers
 {
@@ -14,10 +14,10 @@ namespace ValidateIdAPI.Controllers
     public class ShoppingCartController : ControllerBase
     {
         private readonly ILogger<ShoppingCartController> _logger;
-        private readonly BasketService _basketService;
+        private readonly IBasket _basketService;
 
         public ShoppingCartController(ILogger<ShoppingCartController> logger, 
-            BasketService basketService)
+            IBasket basketService)
         {
             _logger = logger;
             _basketService = basketService ?? throw new ArgumentNullException(nameof(basketService));
