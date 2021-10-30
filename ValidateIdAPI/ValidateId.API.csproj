@@ -17,4 +17,8 @@
     <Folder Include="Exceptions\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ValidateId.Bussines\ValidateId.Bussines.csproj" />
+  </ItemGroup>
+
 </Project>
