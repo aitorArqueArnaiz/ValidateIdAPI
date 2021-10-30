@@ -8,12 +8,22 @@ namespace ValidateId.Infrastructure.Data.Repositories
 {
     public class InMemmoryRepository : DbContext, IInMemmoryRepository
     {
+        #region Class variables
+
         public DbSet<T> ShoppingBaskets { get; set; }
+
+        #endregion
+
+        #region Class constructor
 
         public InMemmoryRepository(DbContextOptions options) : base(options)
         {
             LoadShoppingBaskets();
         }
+
+        #endregion
+
+        #region Class methods
 
         public void LoadShoppingBaskets()
         {
@@ -28,5 +38,7 @@ namespace ValidateId.Infrastructure.Data.Repositories
         {
             return null;
         }
+
+        #endregion
     }
 }
