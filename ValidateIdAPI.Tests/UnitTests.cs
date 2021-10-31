@@ -120,6 +120,14 @@ namespace ValidateId.Tests
             // Assert
             Assert.NotNull(response);
             Assert.AreEqual(response.Poducts.Count, 2);
+            Assert.AreEqual(response.Poducts[0].User.Id, 456);
+            Assert.AreEqual(response.Poducts[0].User.Name, _shoppingBasket.User.Name);
+            Assert.AreEqual(response.Poducts[0].Basket.Units, _shoppingBasket.Basket.Units);
+            Assert.AreEqual(response.Poducts[0].Total, _totalProductCost);
+            Assert.AreEqual(response.Poducts[1].User.Id, 986);
+            Assert.AreEqual(response.Poducts[1].User.Name, _shoppingBasket.User.Name);
+            Assert.AreEqual(response.Poducts[1].Basket.Units, _shoppingBasket.Basket.Units);
+            Assert.AreEqual(response.Poducts[1].Total, _totalProductCost);
         }
 
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.5982532751091703" branch-rate="0.82" lines-covered="137" lines-valid="229" branches-covered="41" branches-valid="50" complexity="83" version="0" timestamp="1635705106">
+<coverage line-rate="0.6118143459915611" branch-rate="0.9042553191489362" lines-covered="145" lines-valid="237" branches-covered="85" branches-valid="94" complexity="126" version="0" timestamp="1635705282">
   <sources>
     <source>C:\Users\aitor\</source>
   </sources>
@@ -365,7 +365,7 @@
           <methods>
             <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="21" branch="false" />
+                <line number="11" hits="23" branch="false" />
               </lines>
             </method>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -380,7 +380,7 @@
             <line number="7" hits="10" branch="false" />
             <line number="8" hits="10" branch="false" />
             <line number="9" hits="10" branch="false" />
-            <line number="11" hits="21" branch="false" />
+            <line number="11" hits="23" branch="false" />
           </lines>
         </class>
         <class name="ValidateId.Domain.DTOs.Basket.AddUserBasketRequest" filename="C:\Users\aitor\Downloads\ValidateIdAPI\ValidateId.Domain\DTOs\Basket\AddUserBasket.Request.cs" line-rate="1" branch-rate="1" complexity="3">
@@ -429,12 +429,12 @@
           <methods>
             <method name="get_Poducts" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="7" hits="2" branch="false" />
+                <line number="7" hits="10" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="7" hits="2" branch="false" />
+            <line number="7" hits="10" branch="false" />
           </lines>
         </class>
         <class name="ValidateId.Domain.Entities.Basket" filename="C:\Users\aitor\Downloads\ValidateIdAPI\ValidateId.Domain\Entities\Basket.cs" line-rate="1" branch-rate="1" complexity="3">
@@ -446,7 +446,7 @@
             </method>
             <method name="get_Units" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="23" hits="15" branch="false" />
+                <line number="23" hits="19" branch="false" />
               </lines>
             </method>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -461,7 +461,7 @@
           </methods>
           <lines>
             <line number="20" hits="11" branch="false" />
-            <line number="23" hits="15" branch="false" />
+            <line number="23" hits="19" branch="false" />
             <line number="26" hits="5" branch="false" />
             <line number="27" hits="5" branch="false" />
             <line number="28" hits="5" branch="false" />
@@ -473,12 +473,12 @@
           <methods>
             <method name="get_User" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="22" branch="false" />
+                <line number="9" hits="24" branch="false" />
               </lines>
             </method>
             <method name="get_Basket" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="12" hits="17" branch="false" />
+                <line number="12" hits="19" branch="false" />
               </lines>
             </method>
             <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
@@ -492,8 +492,8 @@
             </method>
           </methods>
           <lines>
-            <line number="9" hits="22" branch="false" />
-            <line number="12" hits="17" branch="false" />
+            <line number="9" hits="24" branch="false" />
+            <line number="12" hits="19" branch="false" />
             <line number="14" hits="5" branch="false" />
             <line number="15" hits="5" branch="false" />
             <line number="16" hits="5" branch="false" />
@@ -505,12 +505,12 @@
           <methods>
             <method name="get_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="8" hits="10" branch="false" />
+                <line number="8" hits="14" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="8" hits="10" branch="false" />
+            <line number="8" hits="14" branch="false" />
           </lines>
         </class>
       </classes>
@@ -591,7 +591,7 @@
         </class>
       </classes>
     </package>
-    <package name="ValidateIdAPI.Tests" line-rate="0.9818181818181818" branch-rate="1" complexity="26">
+    <package name="ValidateIdAPI.Tests" line-rate="0.9841269841269841" branch-rate="1" complexity="69">
       <classes>
         <class name="AutoGeneratedProgram" filename="C:\Users\aitor\.nuget\packages\microsoft.net.test.sdk\16.9.4\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
@@ -605,7 +605,7 @@
             <line number="4" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="ValidateId.Tests.UnitTests" filename="C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI.Tests\UnitTests.cs" line-rate="1" branch-rate="1" complexity="25">
+        <class name="ValidateId.Tests.UnitTests" filename="C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI.Tests\UnitTests.cs" line-rate="1" branch-rate="1" complexity="68">
           <methods>
             <method name="SetUp" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -652,7 +652,7 @@
                 <line number="91" hits="1" branch="false" />
               </lines>
             </method>
-            <method name="GetProducts_Test" signature="()" line-rate="1" branch-rate="1" complexity="1">
+            <method name="GetProducts_Test" signature="()" line-rate="1" branch-rate="1" complexity="44">
               <lines>
                 <line number="97" hits="1" branch="false" />
                 <line number="98" hits="1" branch="false" />
@@ -674,7 +674,15 @@
                 <line number="118" hits="1" branch="false" />
                 <line number="121" hits="1" branch="false" />
                 <line number="122" hits="1" branch="false" />
-                <line number="123" hits="1" branch="false" />
+                <line number="123" hits="1" branch="true" condition-coverage="100% (6/6)" />
+                <line number="124" hits="1" branch="true" condition-coverage="100% (6/6)" />
+                <line number="125" hits="1" branch="true" condition-coverage="100% (6/6)" />
+                <line number="126" hits="1" branch="true" condition-coverage="100% (4/4)" />
+                <line number="127" hits="1" branch="true" condition-coverage="100% (6/6)" />
+                <line number="128" hits="1" branch="true" condition-coverage="100% (6/6)" />
+                <line number="129" hits="1" branch="true" condition-coverage="100% (6/6)" />
+                <line number="130" hits="1" branch="true" condition-coverage="100% (4/4)" />
+                <line number="131" hits="1" branch="false" />
               </lines>
             </method>
           </methods>
@@ -732,7 +740,15 @@
             <line number="118" hits="1" branch="false" />
             <line number="121" hits="1" branch="false" />
             <line number="122" hits="1" branch="false" />
-            <line number="123" hits="1" branch="false" />
+            <line number="123" hits="1" branch="true" condition-coverage="100% (6/6)" />
+            <line number="124" hits="1" branch="true" condition-coverage="100% (6/6)" />
+            <line number="125" hits="1" branch="true" condition-coverage="100% (6/6)" />
+            <line number="126" hits="1" branch="true" condition-coverage="100% (4/4)" />
+            <line number="127" hits="1" branch="true" condition-coverage="100% (6/6)" />
+            <line number="128" hits="1" branch="true" condition-coverage="100% (6/6)" />
+            <line number="129" hits="1" branch="true" condition-coverage="100% (6/6)" />
+            <line number="130" hits="1" branch="true" condition-coverage="100% (4/4)" />
+            <line number="131" hits="1" branch="false" />
           </lines>
         </class>
       </classes>
