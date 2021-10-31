@@ -30,19 +30,9 @@ namespace ValidateId.Bussines.Services.Basket
         public AdduserBasketResponse AddShoppingBasketToUser(AddUserBasketRequest shoppingBasketRequest)
         {
             var response = new AdduserBasketResponse();
-            var primaryKey = new Random();
-
-            Domain.Entities.Basket basket = new Domain.Entities.Basket();
-            User user = new User();
 
             // Convert AddUserBasketRequest into Shopping basket
-            user.Id = shoppingBasketRequest.User.Id;
-            user.Name = shoppingBasketRequest.User.Name;
-            basket.Id = primaryKey.Next();
-            basket.Total = shoppingBasketRequest.Total;
-            basket.Units = shoppingBasketRequest.Units;
-            basket.CreationDate = shoppingBasketRequest.CreationDate;
-            var shoppingBasket = new ShoppingBasket(user, basket);
+            var shoppingBasket = ConvertAdduserRequestToShoppingCart(shoppingBasketRequest);
 
             response.response = _basketRepository.AddShoppingBasket(shoppingBasket);
             response.message = $"Basket succesfully added for user {shoppingBasketRequest.User.Id}";
@@ -54,6 +44,27 @@ namespace ValidateId.Bussines.Services.Basket
         public List<ShoppingBasket> GetAllShoppingBaskets()
         {
             return null;
+        }
+
+        #endregion
+
+        #region Helper methods
+
+        private ShoppingBasket ConvertAdduserRequestToShoppingCart(AddUserBasketRequest shoppingBasketRequest)
+        {
+            var primaryKey = new Random();
+            Domain.Entities.Basket basket = new Domain.Entities.Basket();
+            User user = new User
+            {
+                Id = shoppingBasketRequest.User.Id,
+                Name = shoppingBasketRequest.User.Name
+            };
+            basket.Id = primaryKey.Next();
+            basket.Total = shoppingBasketRequest.Total;
+            basket.Units = shoppingBasketRequest.Units;
+            basket.CreationDate = shoppingBasketRequest.CreationDate;
+
+            return new ShoppingBasket(user, basket);
         }
 
         #endregion
