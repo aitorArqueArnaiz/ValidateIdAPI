@@ -38,12 +38,13 @@ namespace ValidateId.Infrastructure.Data.Repositories
             return _shoppingBaskets;
         }
 
-        public bool AddShoppingBasket(dynamic shoppingBasket)
+        public bool AddShoppingBasket(dynamic shoppingBasket, double totalProductCost = 0.0)
         {
             dynamic userBasket = new ExpandoObject();
 
             userBasket.User = shoppingBasket.User;
             userBasket.Basket = shoppingBasket.Basket;
+            userBasket.Total = totalProductCost;
 
             _shoppingBaskets.Add(userBasket);
 

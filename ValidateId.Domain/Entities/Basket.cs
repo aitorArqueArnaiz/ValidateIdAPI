@@ -24,13 +24,11 @@ namespace ValidateId.Domain.Entities
         [JsonProperty("Units")]
         public Dictionary<int, ProductId> Units { get; set; }
 
-        public double Total { get; set; }
 
         public Basket()
         {
             Units = new Dictionary<int, ProductId>();
-            CreationDate = DateTime.Now.ToString("yyyy/MM/dd");
-            Total = double.MinValue;
+            CreationDate = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss");
         }
     }
 }

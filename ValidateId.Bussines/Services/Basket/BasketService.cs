@@ -4,6 +4,7 @@ using ValidateId.Bussines.Interfaces.Basket;
 using ValidateId.Domain.DTOs.Basket;
 using ValidateId.Domain.Entities;
 using ValidateId.Infrastructure.Interfaces;
+using static ValidateId.Domain.Shared.Enums;
 
 namespace ValidateId.Bussines.Services.Basket
 {
@@ -34,7 +35,10 @@ namespace ValidateId.Bussines.Services.Basket
             // Convert AddUserBasketRequest into Shopping basket
             ShoppingBasket shoppingBasket = ConvertAdduserRequestToShoppingCart(shoppingBasketRequest);
 
-            response.response = _basketRepository.AddShoppingBasket(shoppingBasket);
+            // Calculate the total cost from the product list
+            double totalProductCost = CalculateTotalProductCost(shoppingBasketRequest.Units);
+
+            response.response = _basketRepository.AddShoppingBasket(shoppingBasket, totalProductCost);
             response.message = $"Basket succesfully added for user {shoppingBasketRequest.User.Id}";
 
             return response;
@@ -50,21 +54,39 @@ namespace ValidateId.Bussines.Services.Basket
 
         #region Helper methods
 
+        /// <summary>Method that converts an AddUserBasketRequest into ShoppingBasket.</summary>
+        /// <param name="shoppingBasketRequest">The shopping basket request data to be added for a given user.</param>
+        /// <returns>The shopping basket.</returns>
         private ShoppingBasket ConvertAdduserRequestToShoppingCart(AddUserBasketRequest shoppingBasketRequest)
         {
             var primaryKey = new Random();
             Domain.Entities.Basket basket = new Domain.Entities.Basket();
+
             User user = new User
             {
                 Id = shoppingBasketRequest.User.Id,
                 Name = shoppingBasketRequest.User.Name
             };
             basket.Id = primaryKey.Next();
-            basket.Total = shoppingBasketRequest.Total;
             basket.Units = shoppingBasketRequest.Units;
             basket.CreationDate = shoppingBasketRequest.CreationDate;
 
             return new ShoppingBasket(user, basket);
+        }
+
+        /// <summary>Method that calculates thw total product cost of the basket.</summary>
+        /// <param name="units">The list of products.</param>
+        /// <returns>The total cost of the basket.</returns>
+        private double CalculateTotalProductCost(Dictionary<int, ProductId> units)
+        {
+            double totalCost = 0;
+
+            foreach(var product in units)
+            {
+                var price = (int)Enum.Parse(typeof(ProductPrice), product.Value.ToString());
+                totalCost += product.Key * price;
+            }
+            return totalCost;
         }
 
         #endregion

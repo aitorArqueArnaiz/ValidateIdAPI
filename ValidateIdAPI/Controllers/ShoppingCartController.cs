@@ -33,8 +33,7 @@ namespace ValidateIdAPI.Controllers
                 {
                     CreationDate = shoppingBasket.Basket.CreationDate,
                     User = shoppingBasket.User,
-                    Units = shoppingBasket.Basket.Units,
-                    Total = shoppingBasket.Basket.Total
+                    Units = shoppingBasket.Basket.Units
                 };
                 shoppingBasketAddedToUser = _basketService.AddShoppingBasketToUser(addShoppingBasketRequest);
             }
