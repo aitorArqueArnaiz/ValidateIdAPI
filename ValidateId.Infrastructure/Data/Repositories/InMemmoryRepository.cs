@@ -2,7 +2,6 @@
 using System.Dynamic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
-using NPOI.SS.Formula.Functions;
 using ValidateId.Infrastructure.Interfaces;
 
 namespace ValidateId.Infrastructure.Data.Repositories
@@ -11,7 +10,7 @@ namespace ValidateId.Infrastructure.Data.Repositories
     {
         #region Class variables
 
-        public DbSet<dynamic> _shoppingBaskets { get; set; }
+        public List<dynamic> _shoppingBaskets { get; set; }
 
         #endregion
 
@@ -23,8 +22,6 @@ namespace ValidateId.Infrastructure.Data.Repositories
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<T>()
-                .HasKey(s => s.Id);
         }
 
 
@@ -34,12 +31,12 @@ namespace ValidateId.Infrastructure.Data.Repositories
 
         public void LoadShoppingBaskets()
         {
-            //_shoppingBaskets = new DbSet<dynamic>();
+            _shoppingBaskets = new List<dynamic>() { };
         }
 
         public List<dynamic> GetShoppingBaskets()
         {
-            return _shoppingBaskets.Local.ToList();
+            return _shoppingBaskets;
         }
 
         public bool AddShoppingBasket(dynamic shoppingBasket)

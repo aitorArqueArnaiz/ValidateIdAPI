@@ -664,7 +664,8 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.11",
           "Microsoft.EntityFrameworkCore.InMemory": "5.0.11",
-          "NPOI": "2.5.5"
+          "NPOI": "2.5.5",
+          "Newtonsoft.Json": "13.0.1"
         },
         "runtime": {
           "ValidateId.Infrastructure.dll": {}
