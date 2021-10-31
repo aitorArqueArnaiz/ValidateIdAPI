@@ -2,6 +2,7 @@
 using System.Dynamic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using NPOI.SS.Formula.Functions;
 using ValidateId.Infrastructure.Interfaces;
 
 namespace ValidateId.Infrastructure.Data.Repositories
@@ -20,6 +21,12 @@ namespace ValidateId.Infrastructure.Data.Repositories
         {
             LoadShoppingBaskets();
         }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<T>()
+                .HasKey(s => s.Id);
+        }
+
 
         #endregion
 

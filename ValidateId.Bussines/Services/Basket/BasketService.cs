@@ -29,7 +29,26 @@ namespace ValidateId.Bussines.Services.Basket
 
         public AdduserBasketResponse AddShoppingBasketToUser(AddUserBasketRequest shoppingBasketRequest)
         {
-            return new AdduserBasketResponse();
+            var response = new AdduserBasketResponse();
+            var primaryKey = new Random();
+
+            Domain.Entities.Basket basket = new Domain.Entities.Basket();
+            User user = new User();
+
+            // Convert AddUserBasketRequest into Shopping basket
+            user.Id = shoppingBasketRequest.User.Id;
+            user.Name = shoppingBasketRequest.User.Name;
+            basket.Id = primaryKey.Next();
+            basket.Total = shoppingBasketRequest.Total;
+            basket.Units = shoppingBasketRequest.Units;
+            basket.CreationDate = shoppingBasketRequest.CreationDate;
+            var shoppingBasket = new ShoppingBasket(user, basket);
+
+            response.response = _basketRepository.AddShoppingBasket(shoppingBasket);
+            response.message = $"Basket succesfully added for user {shoppingBasketRequest.User.Id}";
+
+            return response;
+
         }
 
         public List<ShoppingBasket> GetAllShoppingBaskets()
