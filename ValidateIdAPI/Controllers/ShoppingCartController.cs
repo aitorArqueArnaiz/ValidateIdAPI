@@ -32,6 +32,7 @@ namespace ValidateIdAPI.Controllers
                 AddUserBasketRequest addShoppingBasketRequest = new AddUserBasketRequest()
                 {
                     CreationDate = shoppingBasket.Basket.CreationDate,
+                    User = shoppingBasket.User,
                     Units = shoppingBasket.Basket.Units,
                     Total = shoppingBasket.Basket.Total
                 };

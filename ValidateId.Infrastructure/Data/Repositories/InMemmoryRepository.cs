@@ -27,6 +27,7 @@ namespace ValidateId.Infrastructure.Data.Repositories
 
         public void LoadShoppingBaskets()
         {
+            //_shoppingBaskets = new DbSet<dynamic>();
         }
 
         public List<dynamic> GetShoppingBaskets()
@@ -40,7 +41,7 @@ namespace ValidateId.Infrastructure.Data.Repositories
 
             userBasket.CreationDate = shoppingBasket.Basket.CreationDate;
             userBasket.Units = shoppingBasket.Basket.Units;
-            userBasket.Total = shoppingBasket.Basket.Totl;
+            userBasket.Total = shoppingBasket.Basket.Total;
 
             _shoppingBaskets.Add(userBasket);
 
