@@ -8,7 +8,6 @@ using ValidateId.Domain.DTOs.Basket;
 using ValidateId.Domain.Entities;
 using ValidateId.Infrastructure.Data.Repositories;
 using ValidateId.Infrastructure.Interfaces;
-using static ValidateId.Domain.Shared.Enums;
 
 namespace ValidateId.Tests
 {
@@ -91,6 +90,40 @@ namespace ValidateId.Tests
             Assert.AreEqual(basket.Total, _totalProductCost);
         }
 
+        [Test]
+        [Author("Aitor Arqué Arnaiz")]
+        [Description("Test intended to get all products from repository.")]
+        public void GetProducts_Test()
+        {
+            var addBasketRequest_1 = new AddUserBasketRequest()
+            {
+                CreationDate = _shoppingBasket.Basket.CreationDate,
+                User = _shoppingBasket.User,
+                Units = _shoppingBasket.Basket.Units
+            };
+            var addBasketRequest_2 = new AddUserBasketRequest()
+            {
+                CreationDate = _shoppingBasket.Basket.CreationDate,
+                User = _shoppingBasket.User,
+                Units = _shoppingBasket.Basket.Units
+            };
+
+            // Act
+            _shoppingBasket.User.Id = 456;
+            AdduserBasketResponse result_1 = _basketService.AddShoppingBasketToUser(addBasketRequest_1);
+            _shoppingBasket.User.Id = 986;
+            AdduserBasketResponse result_2 = _basketService.AddShoppingBasketToUser(addBasketRequest_2);
+
+            // Arrange
+            GetAllProductsResponse response = _basketService.GetAllShoppingBaskets();
+
+            // Assert
+            Assert.NotNull(response);
+            Assert.AreEqual(response.Poducts.Count, 2);
+        }
+
+
         #endregion
-    }
+
+        }
 }

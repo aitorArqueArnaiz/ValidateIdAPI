@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.5445544554455446" branch-rate="0.8541666666666666" lines-covered="110" lines-valid="202" branches-covered="41" branches-valid="48" complexity="80" version="0" timestamp="1635699072">
+<coverage line-rate="0.5982532751091703" branch-rate="0.82" lines-covered="137" lines-valid="229" branches-covered="41" branches-valid="50" complexity="83" version="0" timestamp="1635705106">
   <sources>
     <source>C:\Users\aitor\</source>
   </sources>
   <packages>
-    <package name="ValidateId.API" line-rate="0" branch-rate="0" complexity="13">
+    <package name="ValidateId.API" line-rate="0" branch-rate="0" complexity="14">
       <classes>
         <class name="ErrorHandlingFilter" filename="C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI\Exceptions\ErrorHandlingFilter.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
@@ -27,7 +27,7 @@
             <line number="11" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="ValidateIdAPI.Controllers.ShoppingCartController" filename="C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI\Controllers\ShoppingCartController.cs" line-rate="0" branch-rate="0" complexity="4">
+        <class name="ValidateIdAPI.Controllers.ShoppingCartController" filename="C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI\Controllers\ShoppingCartController.cs" line-rate="0" branch-rate="0" complexity="5">
           <methods>
             <method name="AddItem" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -58,19 +58,22 @@
                 <line number="24" hits="0" branch="false" />
               </lines>
             </method>
-            <method name="Get" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="Get" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
                 <line number="49" hits="0" branch="false" />
                 <line number="50" hits="0" branch="false" />
                 <line number="52" hits="0" branch="false" />
                 <line number="53" hits="0" branch="false" />
-                <line number="54" hits="0" branch="false" />
+                <line number="54" hits="0" branch="true" condition-coverage="0% (0/2)" />
                 <line number="55" hits="0" branch="false" />
                 <line number="56" hits="0" branch="false" />
                 <line number="57" hits="0" branch="false" />
                 <line number="58" hits="0" branch="false" />
+                <line number="59" hits="0" branch="false" />
                 <line number="60" hits="0" branch="false" />
                 <line number="61" hits="0" branch="false" />
+                <line number="63" hits="0" branch="false" />
+                <line number="64" hits="0" branch="false" />
               </lines>
             </method>
           </methods>
@@ -100,13 +103,16 @@
             <line number="50" hits="0" branch="false" />
             <line number="52" hits="0" branch="false" />
             <line number="53" hits="0" branch="false" />
-            <line number="54" hits="0" branch="false" />
+            <line number="54" hits="0" branch="true" condition-coverage="0% (0/2)" />
             <line number="55" hits="0" branch="false" />
             <line number="56" hits="0" branch="false" />
             <line number="57" hits="0" branch="false" />
             <line number="58" hits="0" branch="false" />
+            <line number="59" hits="0" branch="false" />
             <line number="60" hits="0" branch="false" />
             <line number="61" hits="0" branch="false" />
+            <line number="63" hits="0" branch="false" />
+            <line number="64" hits="0" branch="false" />
           </lines>
         </class>
         <class name="ValidateIdAPI.Program" filename="C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI\Program.cs" line-rate="0" branch-rate="0" complexity="3">
@@ -245,250 +251,266 @@
         </class>
       </classes>
     </package>
-    <package name="ValidateId.Bussines" line-rate="0.918918918918919" branch-rate="0.75" complexity="7">
+    <package name="ValidateId.Bussines" line-rate="1" branch-rate="0.75" complexity="7">
       <classes>
-        <class name="ValidateId.Bussines.Services.Basket.BasketService" filename="C:\Users\aitor\Downloads\ValidateIdAPI\ValidateId.Bussines\Services\Basket\BasketService.cs" line-rate="0.918918918918919" branch-rate="0.75" complexity="7">
+        <class name="ValidateId.Bussines.Services.Basket.BasketService" filename="C:\Users\aitor\Downloads\ValidateIdAPI\ValidateId.Bussines\Services\Basket\BasketService.cs" line-rate="1" branch-rate="0.75" complexity="7">
           <methods>
             <method name="AddShoppingBasketToUser" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="32" hits="1" branch="false" />
-                <line number="33" hits="1" branch="false" />
-                <line number="36" hits="1" branch="false" />
-                <line number="39" hits="1" branch="false" />
-                <line number="41" hits="1" branch="false" />
-                <line number="42" hits="1" branch="false" />
-                <line number="44" hits="1" branch="false" />
-                <line number="46" hits="1" branch="false" />
+                <line number="32" hits="3" branch="false" />
+                <line number="33" hits="3" branch="false" />
+                <line number="36" hits="3" branch="false" />
+                <line number="39" hits="3" branch="false" />
+                <line number="41" hits="3" branch="false" />
+                <line number="42" hits="3" branch="false" />
+                <line number="44" hits="3" branch="false" />
+                <line number="46" hits="3" branch="false" />
               </lines>
             </method>
-            <method name="GetAllShoppingBaskets" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="GetAllShoppingBaskets" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="49" hits="0" branch="false" />
-                <line number="50" hits="0" branch="false" />
-                <line number="51" hits="0" branch="false" />
+                <line number="49" hits="1" branch="false" />
+                <line number="50" hits="1" branch="false" />
+                <line number="51" hits="1" branch="false" />
+                <line number="52" hits="1" branch="false" />
+                <line number="53" hits="1" branch="false" />
               </lines>
             </method>
             <method name="ConvertAdduserRequestToShoppingCart" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="61" hits="1" branch="false" />
-                <line number="62" hits="1" branch="false" />
-                <line number="63" hits="1" branch="false" />
-                <line number="65" hits="1" branch="false" />
-                <line number="66" hits="1" branch="false" />
-                <line number="67" hits="1" branch="false" />
-                <line number="68" hits="1" branch="false" />
-                <line number="69" hits="1" branch="false" />
-                <line number="70" hits="1" branch="false" />
-                <line number="71" hits="1" branch="false" />
-                <line number="72" hits="1" branch="false" />
-                <line number="74" hits="1" branch="false" />
-                <line number="75" hits="1" branch="false" />
+                <line number="63" hits="3" branch="false" />
+                <line number="64" hits="3" branch="false" />
+                <line number="65" hits="3" branch="false" />
+                <line number="67" hits="3" branch="false" />
+                <line number="68" hits="3" branch="false" />
+                <line number="69" hits="3" branch="false" />
+                <line number="70" hits="3" branch="false" />
+                <line number="71" hits="3" branch="false" />
+                <line number="72" hits="3" branch="false" />
+                <line number="73" hits="3" branch="false" />
+                <line number="74" hits="3" branch="false" />
+                <line number="76" hits="3" branch="false" />
+                <line number="77" hits="3" branch="false" />
               </lines>
             </method>
             <method name="CalculateTotalProductCost" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="81" hits="1" branch="false" />
-                <line number="82" hits="1" branch="false" />
-                <line number="84" hits="7" branch="true" condition-coverage="100% (2/2)" />
-                <line number="85" hits="2" branch="false" />
-                <line number="86" hits="2" branch="false" />
-                <line number="87" hits="2" branch="false" />
-                <line number="88" hits="2" branch="false" />
-                <line number="89" hits="1" branch="false" />
-                <line number="90" hits="1" branch="false" />
+                <line number="83" hits="3" branch="false" />
+                <line number="84" hits="3" branch="false" />
+                <line number="86" hits="21" branch="true" condition-coverage="100% (2/2)" />
+                <line number="87" hits="6" branch="false" />
+                <line number="88" hits="6" branch="false" />
+                <line number="89" hits="6" branch="false" />
+                <line number="90" hits="6" branch="false" />
+                <line number="91" hits="3" branch="false" />
+                <line number="92" hits="3" branch="false" />
               </lines>
             </method>
             <method name=".ctor" signature="(...)" line-rate="1" branch-rate="0.5" complexity="2">
               <lines>
-                <line number="22" hits="1" branch="false" />
-                <line number="23" hits="1" branch="false" />
-                <line number="24" hits="1" branch="true" condition-coverage="50% (1/2)" />
-                <line number="25" hits="1" branch="false" />
+                <line number="22" hits="2" branch="false" />
+                <line number="23" hits="2" branch="false" />
+                <line number="24" hits="2" branch="true" condition-coverage="50% (1/2)" />
+                <line number="25" hits="2" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="22" hits="1" branch="false" />
-            <line number="23" hits="1" branch="false" />
-            <line number="24" hits="1" branch="true" condition-coverage="50% (1/2)" />
-            <line number="25" hits="1" branch="false" />
-            <line number="32" hits="1" branch="false" />
-            <line number="33" hits="1" branch="false" />
-            <line number="36" hits="1" branch="false" />
-            <line number="39" hits="1" branch="false" />
-            <line number="41" hits="1" branch="false" />
-            <line number="42" hits="1" branch="false" />
-            <line number="44" hits="1" branch="false" />
-            <line number="46" hits="1" branch="false" />
-            <line number="49" hits="0" branch="false" />
-            <line number="50" hits="0" branch="false" />
-            <line number="51" hits="0" branch="false" />
-            <line number="61" hits="1" branch="false" />
-            <line number="62" hits="1" branch="false" />
-            <line number="63" hits="1" branch="false" />
-            <line number="65" hits="1" branch="false" />
-            <line number="66" hits="1" branch="false" />
-            <line number="67" hits="1" branch="false" />
-            <line number="68" hits="1" branch="false" />
-            <line number="69" hits="1" branch="false" />
-            <line number="70" hits="1" branch="false" />
-            <line number="71" hits="1" branch="false" />
-            <line number="72" hits="1" branch="false" />
-            <line number="74" hits="1" branch="false" />
-            <line number="75" hits="1" branch="false" />
-            <line number="81" hits="1" branch="false" />
-            <line number="82" hits="1" branch="false" />
-            <line number="84" hits="7" branch="true" condition-coverage="100% (2/2)" />
-            <line number="85" hits="2" branch="false" />
-            <line number="86" hits="2" branch="false" />
-            <line number="87" hits="2" branch="false" />
-            <line number="88" hits="2" branch="false" />
-            <line number="89" hits="1" branch="false" />
-            <line number="90" hits="1" branch="false" />
+            <line number="22" hits="2" branch="false" />
+            <line number="23" hits="2" branch="false" />
+            <line number="24" hits="2" branch="true" condition-coverage="50% (1/2)" />
+            <line number="25" hits="2" branch="false" />
+            <line number="32" hits="3" branch="false" />
+            <line number="33" hits="3" branch="false" />
+            <line number="36" hits="3" branch="false" />
+            <line number="39" hits="3" branch="false" />
+            <line number="41" hits="3" branch="false" />
+            <line number="42" hits="3" branch="false" />
+            <line number="44" hits="3" branch="false" />
+            <line number="46" hits="3" branch="false" />
+            <line number="49" hits="1" branch="false" />
+            <line number="50" hits="1" branch="false" />
+            <line number="51" hits="1" branch="false" />
+            <line number="52" hits="1" branch="false" />
+            <line number="53" hits="1" branch="false" />
+            <line number="63" hits="3" branch="false" />
+            <line number="64" hits="3" branch="false" />
+            <line number="65" hits="3" branch="false" />
+            <line number="67" hits="3" branch="false" />
+            <line number="68" hits="3" branch="false" />
+            <line number="69" hits="3" branch="false" />
+            <line number="70" hits="3" branch="false" />
+            <line number="71" hits="3" branch="false" />
+            <line number="72" hits="3" branch="false" />
+            <line number="73" hits="3" branch="false" />
+            <line number="74" hits="3" branch="false" />
+            <line number="76" hits="3" branch="false" />
+            <line number="77" hits="3" branch="false" />
+            <line number="83" hits="3" branch="false" />
+            <line number="84" hits="3" branch="false" />
+            <line number="86" hits="21" branch="true" condition-coverage="100% (2/2)" />
+            <line number="87" hits="6" branch="false" />
+            <line number="88" hits="6" branch="false" />
+            <line number="89" hits="6" branch="false" />
+            <line number="90" hits="6" branch="false" />
+            <line number="91" hits="3" branch="false" />
+            <line number="92" hits="3" branch="false" />
           </lines>
         </class>
       </classes>
     </package>
-    <package name="ValidateId.Domain" line-rate="1" branch-rate="1" complexity="14">
+    <package name="ValidateId.Domain" line-rate="1" branch-rate="1" complexity="15">
       <classes>
         <class name="ValidateId.Domain.Base.BaseEntity" filename="C:\Users\aitor\Downloads\ValidateIdAPI\ValidateId.Domain\Base\BaseEntity.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
             <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="8" branch="false" />
+                <line number="11" hits="21" branch="false" />
               </lines>
             </method>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="7" hits="4" branch="false" />
-                <line number="8" hits="4" branch="false" />
-                <line number="9" hits="4" branch="false" />
+                <line number="7" hits="10" branch="false" />
+                <line number="8" hits="10" branch="false" />
+                <line number="9" hits="10" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="7" hits="4" branch="false" />
-            <line number="8" hits="4" branch="false" />
-            <line number="9" hits="4" branch="false" />
-            <line number="11" hits="8" branch="false" />
+            <line number="7" hits="10" branch="false" />
+            <line number="8" hits="10" branch="false" />
+            <line number="9" hits="10" branch="false" />
+            <line number="11" hits="21" branch="false" />
           </lines>
         </class>
         <class name="ValidateId.Domain.DTOs.Basket.AddUserBasketRequest" filename="C:\Users\aitor\Downloads\ValidateIdAPI\ValidateId.Domain\DTOs\Basket\AddUserBasket.Request.cs" line-rate="1" branch-rate="1" complexity="3">
           <methods>
             <method name="get_CreationDate" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="2" branch="false" />
+                <line number="9" hits="6" branch="false" />
               </lines>
             </method>
             <method name="get_User" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="4" branch="false" />
+                <line number="11" hits="12" branch="false" />
               </lines>
             </method>
             <method name="get_Units" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="3" branch="false" />
+                <line number="13" hits="9" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="9" hits="2" branch="false" />
-            <line number="11" hits="4" branch="false" />
-            <line number="13" hits="3" branch="false" />
+            <line number="9" hits="6" branch="false" />
+            <line number="11" hits="12" branch="false" />
+            <line number="13" hits="9" branch="false" />
           </lines>
         </class>
         <class name="ValidateId.Domain.DTOs.Basket.AdduserBasketResponse" filename="C:\Users\aitor\Downloads\ValidateIdAPI\ValidateId.Domain\DTOs\Basket\AdduserBasket.Response.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
             <method name="get_response" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="5" hits="2" branch="false" />
+                <line number="5" hits="4" branch="false" />
               </lines>
             </method>
             <method name="get_message" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="6" hits="1" branch="false" />
+                <line number="6" hits="3" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="5" hits="2" branch="false" />
-            <line number="6" hits="1" branch="false" />
+            <line number="5" hits="4" branch="false" />
+            <line number="6" hits="3" branch="false" />
+          </lines>
+        </class>
+        <class name="ValidateId.Domain.DTOs.Basket.GetAllProductsResponse" filename="C:\Users\aitor\Downloads\ValidateIdAPI\ValidateId.Domain\DTOs\Basket\GetAllProducts.Response.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="get_Poducts" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="2" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="2" branch="false" />
           </lines>
         </class>
         <class name="ValidateId.Domain.Entities.Basket" filename="C:\Users\aitor\Downloads\ValidateIdAPI\ValidateId.Domain\Entities\Basket.cs" line-rate="1" branch-rate="1" complexity="3">
           <methods>
             <method name="get_CreationDate" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="19" hits="4" branch="false" />
+                <line number="20" hits="11" branch="false" />
               </lines>
             </method>
             <method name="get_Units" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="22" hits="7" branch="false" />
+                <line number="23" hits="15" branch="false" />
               </lines>
             </method>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="25" hits="2" branch="false" />
-                <line number="26" hits="2" branch="false" />
-                <line number="27" hits="2" branch="false" />
-                <line number="28" hits="2" branch="false" />
-                <line number="29" hits="2" branch="false" />
+                <line number="26" hits="5" branch="false" />
+                <line number="27" hits="5" branch="false" />
+                <line number="28" hits="5" branch="false" />
+                <line number="29" hits="5" branch="false" />
+                <line number="30" hits="5" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="19" hits="4" branch="false" />
-            <line number="22" hits="7" branch="false" />
-            <line number="25" hits="2" branch="false" />
-            <line number="26" hits="2" branch="false" />
-            <line number="27" hits="2" branch="false" />
-            <line number="28" hits="2" branch="false" />
-            <line number="29" hits="2" branch="false" />
+            <line number="20" hits="11" branch="false" />
+            <line number="23" hits="15" branch="false" />
+            <line number="26" hits="5" branch="false" />
+            <line number="27" hits="5" branch="false" />
+            <line number="28" hits="5" branch="false" />
+            <line number="29" hits="5" branch="false" />
+            <line number="30" hits="5" branch="false" />
           </lines>
         </class>
         <class name="ValidateId.Domain.Entities.ShoppingBasket" filename="C:\Users\aitor\Downloads\ValidateIdAPI\ValidateId.Domain\Entities\ShoppingBasket.cs" line-rate="1" branch-rate="1" complexity="3">
           <methods>
             <method name="get_User" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="9" branch="false" />
+                <line number="9" hits="22" branch="false" />
               </lines>
             </method>
             <method name="get_Basket" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="12" hits="7" branch="false" />
+                <line number="12" hits="17" branch="false" />
               </lines>
             </method>
             <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="14" hits="2" branch="false" />
-                <line number="15" hits="2" branch="false" />
-                <line number="16" hits="2" branch="false" />
-                <line number="17" hits="2" branch="false" />
-                <line number="18" hits="2" branch="false" />
+                <line number="14" hits="5" branch="false" />
+                <line number="15" hits="5" branch="false" />
+                <line number="16" hits="5" branch="false" />
+                <line number="17" hits="5" branch="false" />
+                <line number="18" hits="5" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="9" hits="9" branch="false" />
-            <line number="12" hits="7" branch="false" />
-            <line number="14" hits="2" branch="false" />
-            <line number="15" hits="2" branch="false" />
-            <line number="16" hits="2" branch="false" />
-            <line number="17" hits="2" branch="false" />
-            <line number="18" hits="2" branch="false" />
+            <line number="9" hits="22" branch="false" />
+            <line number="12" hits="17" branch="false" />
+            <line number="14" hits="5" branch="false" />
+            <line number="15" hits="5" branch="false" />
+            <line number="16" hits="5" branch="false" />
+            <line number="17" hits="5" branch="false" />
+            <line number="18" hits="5" branch="false" />
           </lines>
         </class>
         <class name="ValidateId.Domain.Entities.User" filename="C:\Users\aitor\Downloads\ValidateIdAPI\ValidateId.Domain\Entities\User.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="get_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="8" hits="5" branch="false" />
+                <line number="8" hits="10" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="8" hits="5" branch="false" />
+            <line number="8" hits="10" branch="false" />
           </lines>
         </class>
       </classes>
@@ -499,7 +521,7 @@
           <methods>
             <method name="get__shoppingBaskets" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="4" branch="false" />
+                <line number="13" hits="8" branch="false" />
               </lines>
             </method>
             <method name="OnModelCreating" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
@@ -510,66 +532,66 @@
             </method>
             <method name="LoadShoppingBaskets" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="33" hits="1" branch="false" />
-                <line number="34" hits="1" branch="false" />
-                <line number="35" hits="1" branch="false" />
+                <line number="33" hits="2" branch="false" />
+                <line number="34" hits="2" branch="false" />
+                <line number="35" hits="2" branch="false" />
               </lines>
             </method>
             <method name="GetShoppingBaskets" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="38" hits="2" branch="false" />
-                <line number="39" hits="4" branch="false" />
-                <line number="40" hits="2" branch="false" />
+                <line number="38" hits="3" branch="false" />
+                <line number="39" hits="7" branch="false" />
+                <line number="40" hits="3" branch="false" />
               </lines>
             </method>
             <method name="AddShoppingBasket" signature="(...)" line-rate="1" branch-rate="1" complexity="16">
               <lines>
-                <line number="43" hits="1" branch="false" />
-                <line number="44" hits="1" branch="false" />
-                <line number="45" hits="1" branch="true" condition-coverage="100% (4/4)" />
-                <line number="46" hits="1" branch="true" condition-coverage="100% (4/4)" />
-                <line number="47" hits="1" branch="true" condition-coverage="100% (2/2)" />
-                <line number="49" hits="1" branch="true" condition-coverage="100% (6/6)" />
-                <line number="51" hits="1" branch="false" />
-                <line number="52" hits="1" branch="false" />
+                <line number="43" hits="3" branch="false" />
+                <line number="44" hits="3" branch="false" />
+                <line number="45" hits="3" branch="true" condition-coverage="100% (4/4)" />
+                <line number="46" hits="3" branch="true" condition-coverage="100% (4/4)" />
+                <line number="47" hits="3" branch="true" condition-coverage="100% (2/2)" />
+                <line number="49" hits="3" branch="true" condition-coverage="100% (6/6)" />
+                <line number="51" hits="3" branch="false" />
+                <line number="52" hits="3" branch="false" />
               </lines>
             </method>
             <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="19" hits="1" branch="false" />
-                <line number="20" hits="1" branch="false" />
-                <line number="21" hits="1" branch="false" />
-                <line number="22" hits="1" branch="false" />
+                <line number="19" hits="2" branch="false" />
+                <line number="20" hits="2" branch="false" />
+                <line number="21" hits="2" branch="false" />
+                <line number="22" hits="2" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="13" hits="4" branch="false" />
-            <line number="19" hits="1" branch="false" />
-            <line number="20" hits="1" branch="false" />
-            <line number="21" hits="1" branch="false" />
-            <line number="22" hits="1" branch="false" />
+            <line number="13" hits="8" branch="false" />
+            <line number="19" hits="2" branch="false" />
+            <line number="20" hits="2" branch="false" />
+            <line number="21" hits="2" branch="false" />
+            <line number="22" hits="2" branch="false" />
             <line number="24" hits="0" branch="false" />
             <line number="25" hits="0" branch="false" />
-            <line number="33" hits="1" branch="false" />
-            <line number="34" hits="1" branch="false" />
-            <line number="35" hits="1" branch="false" />
-            <line number="38" hits="2" branch="false" />
-            <line number="39" hits="4" branch="false" />
-            <line number="40" hits="2" branch="false" />
-            <line number="43" hits="1" branch="false" />
-            <line number="44" hits="1" branch="false" />
-            <line number="45" hits="1" branch="true" condition-coverage="100% (4/4)" />
-            <line number="46" hits="1" branch="true" condition-coverage="100% (4/4)" />
-            <line number="47" hits="1" branch="true" condition-coverage="100% (2/2)" />
-            <line number="49" hits="1" branch="true" condition-coverage="100% (6/6)" />
-            <line number="51" hits="1" branch="false" />
-            <line number="52" hits="1" branch="false" />
+            <line number="33" hits="2" branch="false" />
+            <line number="34" hits="2" branch="false" />
+            <line number="35" hits="2" branch="false" />
+            <line number="38" hits="3" branch="false" />
+            <line number="39" hits="7" branch="false" />
+            <line number="40" hits="3" branch="false" />
+            <line number="43" hits="3" branch="false" />
+            <line number="44" hits="3" branch="false" />
+            <line number="45" hits="3" branch="true" condition-coverage="100% (4/4)" />
+            <line number="46" hits="3" branch="true" condition-coverage="100% (4/4)" />
+            <line number="47" hits="3" branch="true" condition-coverage="100% (2/2)" />
+            <line number="49" hits="3" branch="true" condition-coverage="100% (6/6)" />
+            <line number="51" hits="3" branch="false" />
+            <line number="52" hits="3" branch="false" />
           </lines>
         </class>
       </classes>
     </package>
-    <package name="ValidateIdAPI.Tests" line-rate="0.9705882352941176" branch-rate="1" complexity="25">
+    <package name="ValidateIdAPI.Tests" line-rate="0.9818181818181818" branch-rate="1" complexity="26">
       <classes>
         <class name="AutoGeneratedProgram" filename="C:\Users\aitor\.nuget\packages\microsoft.net.test.sdk\16.9.4\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
@@ -583,88 +605,134 @@
             <line number="4" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="ValidateId.Tests.UnitTests" filename="C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI.Tests\UnitTests.cs" line-rate="1" branch-rate="1" complexity="24">
+        <class name="ValidateId.Tests.UnitTests" filename="C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI.Tests\UnitTests.cs" line-rate="1" branch-rate="1" complexity="25">
           <methods>
             <method name="SetUp" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="38" hits="1" branch="false" />
-                <line number="39" hits="1" branch="false" />
-                <line number="40" hits="1" branch="false" />
-                <line number="42" hits="1" branch="false" />
-                <line number="43" hits="1" branch="false" />
-                <line number="45" hits="1" branch="false" />
-                <line number="46" hits="1" branch="false" />
-                <line number="47" hits="1" branch="false" />
-                <line number="48" hits="1" branch="false" />
-                <line number="50" hits="1" branch="false" />
-                <line number="51" hits="1" branch="false" />
-                <line number="53" hits="1" branch="false" />
+                <line number="37" hits="2" branch="false" />
+                <line number="38" hits="2" branch="false" />
+                <line number="39" hits="2" branch="false" />
+                <line number="41" hits="2" branch="false" />
+                <line number="42" hits="2" branch="false" />
+                <line number="44" hits="2" branch="false" />
+                <line number="45" hits="2" branch="false" />
+                <line number="46" hits="2" branch="false" />
+                <line number="47" hits="2" branch="false" />
+                <line number="49" hits="2" branch="false" />
+                <line number="50" hits="2" branch="false" />
+                <line number="52" hits="2" branch="false" />
               </lines>
             </method>
             <method name="TearDown" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="57" hits="1" branch="false" />
-                <line number="58" hits="1" branch="false" />
-                <line number="59" hits="1" branch="false" />
-                <line number="60" hits="1" branch="false" />
+                <line number="56" hits="2" branch="false" />
+                <line number="57" hits="2" branch="false" />
+                <line number="58" hits="2" branch="false" />
+                <line number="59" hits="2" branch="false" />
               </lines>
             </method>
             <method name="AddShoppingBasket_ToUser_Test" signature="()" line-rate="1" branch-rate="1" complexity="22">
               <lines>
-                <line number="70" hits="1" branch="false" />
+                <line number="69" hits="1" branch="false" />
+                <line number="71" hits="1" branch="false" />
                 <line number="72" hits="1" branch="false" />
                 <line number="73" hits="1" branch="false" />
                 <line number="74" hits="1" branch="false" />
                 <line number="75" hits="1" branch="false" />
                 <line number="76" hits="1" branch="false" />
-                <line number="77" hits="1" branch="false" />
-                <line number="81" hits="1" branch="false" />
+                <line number="80" hits="1" branch="false" />
+                <line number="83" hits="1" branch="false" />
                 <line number="84" hits="1" branch="false" />
                 <line number="85" hits="1" branch="false" />
                 <line number="86" hits="1" branch="false" />
-                <line number="87" hits="1" branch="false" />
+                <line number="87" hits="1" branch="true" condition-coverage="100% (6/6)" />
                 <line number="88" hits="1" branch="true" condition-coverage="100% (6/6)" />
                 <line number="89" hits="1" branch="true" condition-coverage="100% (6/6)" />
-                <line number="90" hits="1" branch="true" condition-coverage="100% (6/6)" />
-                <line number="91" hits="1" branch="true" condition-coverage="100% (4/4)" />
-                <line number="92" hits="1" branch="false" />
+                <line number="90" hits="1" branch="true" condition-coverage="100% (4/4)" />
+                <line number="91" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetProducts_Test" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="97" hits="1" branch="false" />
+                <line number="98" hits="1" branch="false" />
+                <line number="99" hits="1" branch="false" />
+                <line number="100" hits="1" branch="false" />
+                <line number="101" hits="1" branch="false" />
+                <line number="102" hits="1" branch="false" />
+                <line number="103" hits="1" branch="false" />
+                <line number="104" hits="1" branch="false" />
+                <line number="105" hits="1" branch="false" />
+                <line number="106" hits="1" branch="false" />
+                <line number="107" hits="1" branch="false" />
+                <line number="108" hits="1" branch="false" />
+                <line number="109" hits="1" branch="false" />
+                <line number="112" hits="1" branch="false" />
+                <line number="113" hits="1" branch="false" />
+                <line number="114" hits="1" branch="false" />
+                <line number="115" hits="1" branch="false" />
+                <line number="118" hits="1" branch="false" />
+                <line number="121" hits="1" branch="false" />
+                <line number="122" hits="1" branch="false" />
+                <line number="123" hits="1" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="38" hits="1" branch="false" />
-            <line number="39" hits="1" branch="false" />
-            <line number="40" hits="1" branch="false" />
-            <line number="42" hits="1" branch="false" />
-            <line number="43" hits="1" branch="false" />
-            <line number="45" hits="1" branch="false" />
-            <line number="46" hits="1" branch="false" />
-            <line number="47" hits="1" branch="false" />
-            <line number="48" hits="1" branch="false" />
-            <line number="50" hits="1" branch="false" />
-            <line number="51" hits="1" branch="false" />
-            <line number="53" hits="1" branch="false" />
-            <line number="57" hits="1" branch="false" />
-            <line number="58" hits="1" branch="false" />
-            <line number="59" hits="1" branch="false" />
-            <line number="60" hits="1" branch="false" />
-            <line number="70" hits="1" branch="false" />
+            <line number="37" hits="2" branch="false" />
+            <line number="38" hits="2" branch="false" />
+            <line number="39" hits="2" branch="false" />
+            <line number="41" hits="2" branch="false" />
+            <line number="42" hits="2" branch="false" />
+            <line number="44" hits="2" branch="false" />
+            <line number="45" hits="2" branch="false" />
+            <line number="46" hits="2" branch="false" />
+            <line number="47" hits="2" branch="false" />
+            <line number="49" hits="2" branch="false" />
+            <line number="50" hits="2" branch="false" />
+            <line number="52" hits="2" branch="false" />
+            <line number="56" hits="2" branch="false" />
+            <line number="57" hits="2" branch="false" />
+            <line number="58" hits="2" branch="false" />
+            <line number="59" hits="2" branch="false" />
+            <line number="69" hits="1" branch="false" />
+            <line number="71" hits="1" branch="false" />
             <line number="72" hits="1" branch="false" />
             <line number="73" hits="1" branch="false" />
             <line number="74" hits="1" branch="false" />
             <line number="75" hits="1" branch="false" />
             <line number="76" hits="1" branch="false" />
-            <line number="77" hits="1" branch="false" />
-            <line number="81" hits="1" branch="false" />
+            <line number="80" hits="1" branch="false" />
+            <line number="83" hits="1" branch="false" />
             <line number="84" hits="1" branch="false" />
             <line number="85" hits="1" branch="false" />
             <line number="86" hits="1" branch="false" />
-            <line number="87" hits="1" branch="false" />
+            <line number="87" hits="1" branch="true" condition-coverage="100% (6/6)" />
             <line number="88" hits="1" branch="true" condition-coverage="100% (6/6)" />
             <line number="89" hits="1" branch="true" condition-coverage="100% (6/6)" />
-            <line number="90" hits="1" branch="true" condition-coverage="100% (6/6)" />
-            <line number="91" hits="1" branch="true" condition-coverage="100% (4/4)" />
-            <line number="92" hits="1" branch="false" />
+            <line number="90" hits="1" branch="true" condition-coverage="100% (4/4)" />
+            <line number="91" hits="1" branch="false" />
+            <line number="97" hits="1" branch="false" />
+            <line number="98" hits="1" branch="false" />
+            <line number="99" hits="1" branch="false" />
+            <line number="100" hits="1" branch="false" />
+            <line number="101" hits="1" branch="false" />
+            <line number="102" hits="1" branch="false" />
+            <line number="103" hits="1" branch="false" />
+            <line number="104" hits="1" branch="false" />
+            <line number="105" hits="1" branch="false" />
+            <line number="106" hits="1" branch="false" />
+            <line number="107" hits="1" branch="false" />
+            <line number="108" hits="1" branch="false" />
+            <line number="109" hits="1" branch="false" />
+            <line number="112" hits="1" branch="false" />
+            <line number="113" hits="1" branch="false" />
+            <line number="114" hits="1" branch="false" />
+            <line number="115" hits="1" branch="false" />
+            <line number="118" hits="1" branch="false" />
+            <line number="121" hits="1" branch="false" />
+            <line number="122" hits="1" branch="false" />
+            <line number="123" hits="1" branch="false" />
           </lines>
         </class>
       </classes>
