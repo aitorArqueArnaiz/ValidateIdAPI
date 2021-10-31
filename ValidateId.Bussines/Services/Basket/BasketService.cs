@@ -77,13 +77,13 @@ namespace ValidateId.Bussines.Services.Basket
         /// <summary>Method that calculates thw total product cost of the basket.</summary>
         /// <param name="units">The list of products.</param>
         /// <returns>The total cost of the basket.</returns>
-        private double CalculateTotalProductCost(Dictionary<int, ProductId> units)
+        private double CalculateTotalProductCost(Dictionary<int, string> units)
         {
             double totalCost = 0;
 
             foreach(var product in units)
             {
-                var price = (int)Enum.Parse(typeof(ProductPrice), product.Value.ToString());
+                var price = (int)Enum.Parse(typeof(ProductPrice), product.Value);
                 totalCost += product.Key * price;
             }
             return totalCost;

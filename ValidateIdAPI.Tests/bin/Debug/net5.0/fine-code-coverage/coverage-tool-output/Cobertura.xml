@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.541871921182266" branch-rate="0.8409090909090909" lines-covered="110" lines-valid="203" branches-covered="37" branches-valid="44" complexity="76" version="0" timestamp="1635694606">
+<coverage line-rate="0.541871921182266" branch-rate="0.8409090909090909" lines-covered="110" lines-valid="203" branches-covered="37" branches-valid="44" complexity="76" version="0" timestamp="1635695788">
   <sources>
     <source>C:\Users\aitor\</source>
   </sources>

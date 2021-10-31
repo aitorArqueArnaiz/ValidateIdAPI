@@ -22,12 +22,12 @@ namespace ValidateId.Domain.Entities
         public string CreationDate { get; set; }
 
         [JsonProperty("Units")]
-        public Dictionary<int, ProductId> Units { get; set; }
+        public Dictionary<int, string> Units { get; set; }
 
 
         public Basket()
         {
-            Units = new Dictionary<int, ProductId>();
+            Units = new Dictionary<int, string>();
             CreationDate = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss");
         }
     }

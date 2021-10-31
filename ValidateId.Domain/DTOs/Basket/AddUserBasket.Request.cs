@@ -10,6 +10,6 @@ namespace ValidateId.Domain.DTOs.Basket
 
         public User User { get; set; }
 
-        public Dictionary<int, ProductId> Units { get; set; }
+        public Dictionary<int, string> Units { get; set; }
     }
 }

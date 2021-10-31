@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0.5418" branch-rate="0.8409" version="1.9" timestamp="1635691006" lines-covered="110" lines-valid="203" branches-covered="37" branches-valid="44">
+<coverage line-rate="0.5418" branch-rate="0.8409" version="1.9" timestamp="1635692188" lines-covered="110" lines-valid="203" branches-covered="37" branches-valid="44">
   <sources>
     <source>C:\Users\aitor\</source>
   </sources>
@@ -316,13 +316,13 @@
                 <line number="75" hits="1" branch="False" />
               </lines>
             </method>
-            <method name="CalculateTotalProductCost" signature="(System.Collections.Generic.Dictionary`2&lt;System.Int32,ValidateId.Domain.Shared.Enums/ProductId&gt;)" line-rate="1" branch-rate="1" complexity="2">
+            <method name="CalculateTotalProductCost" signature="(System.Collections.Generic.Dictionary`2&lt;System.Int32,System.String&gt;)" line-rate="1" branch-rate="1" complexity="2">
               <lines>
                 <line number="81" hits="1" branch="False" />
                 <line number="82" hits="1" branch="False" />
                 <line number="84" hits="7" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="94" type="jump" coverage="100%" />
+                    <condition number="79" type="jump" coverage="100%" />
                   </conditions>
                 </line>
                 <line number="85" hits="2" branch="False" />
@@ -375,7 +375,7 @@
             <line number="82" hits="1" branch="False" />
             <line number="84" hits="7" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="94" type="jump" coverage="100%" />
+                <condition number="79" type="jump" coverage="100%" />
               </conditions>
             </line>
             <line number="85" hits="2" branch="False" />

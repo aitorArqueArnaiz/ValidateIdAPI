@@ -37,7 +37,7 @@ namespace ValidateId.Tests
         public void SetUp()
         {
             _shoppingBasket = new ShoppingBasket(new User(), new Basket());
-            _shoppingBasket.Basket.Units = new Dictionary<int, ProductId>() { { 2, ProductId.TheHobbit }, { 5, ProductId.BreakingBad } };
+            _shoppingBasket.Basket.Units = new Dictionary<int, string>() { { 2, "TheHobbit" }, { 5, "BreakingBad" } };
 
             _shoppingBasket.User.Id = 353;
             _shoppingBasket.User.Name = "User test";
