@@ -62,31 +62,30 @@ namespace ValidateId.Bussines.Services.Basket
         private ShoppingBasket ConvertAdduserRequestToShoppingCart(AddUserBasketRequest shoppingBasketRequest)
         {
             var primaryKey = new Random();
-            Domain.Entities.Basket basket = new Domain.Entities.Basket();
+            ShoppingBasket shoppingBasket = new ShoppingBasket(shoppingBasketRequest.User.Id);
 
             User user = new User
             {
-                Id = shoppingBasketRequest.User.Id,
-                Name = shoppingBasketRequest.User.Name
+                Id = shoppingBasketRequest.User.Id
             };
-            basket.Id = primaryKey.Next();
-            basket.Units = shoppingBasketRequest.Units;
-            basket.CreationDate = shoppingBasketRequest.CreationDate;
+            shoppingBasket.Id = primaryKey.Next();
+            shoppingBasket.Products = shoppingBasketRequest.Units;
+            shoppingBasket.CreationDate = shoppingBasketRequest.CreationDate;
 
-            return new ShoppingBasket(user, basket);
+            return shoppingBasket;
         }
 
         /// <summary>Method that calculates thw total product cost of the basket.</summary>
         /// <param name="units">The list of products.</param>
         /// <returns>The total cost of the basket.</returns>
-        private double CalculateTotalProductCost(Dictionary<int, string> units)
+        private double CalculateTotalProductCost(List<Product> units)
         {
             double totalCost = 0;
 
             foreach(var product in units)
             {
-                var price = (int)Enum.Parse(typeof(ProductPrice), product.Value);
-                totalCost += product.Key * price;
+                var price = (int)Enum.Parse(typeof(ProductPrice), Enum.GetName(product.Name));
+                totalCost += product.Quantity * price;
             }
             return totalCost;
         }

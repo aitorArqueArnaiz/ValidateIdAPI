@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 using ValidateId.Bussines.Interfaces.Basket;
 using ValidateId.Domain.DTOs.Basket;
@@ -31,8 +30,7 @@ namespace ValidateIdAPI.Controllers
             {
                 AddUserBasketRequest addShoppingBasketRequest = new AddUserBasketRequest()
                 {
-                    User = shoppingBasket.User,
-                    Units = shoppingBasket.Basket.Units
+                    Units = shoppingBasket.Products
                 };
                 shoppingBasketAddedToUser = _basketService.AddShoppingBasketToUser(addShoppingBasketRequest);
             }

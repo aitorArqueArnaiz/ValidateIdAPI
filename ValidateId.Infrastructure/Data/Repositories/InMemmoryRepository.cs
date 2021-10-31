@@ -42,9 +42,12 @@ namespace ValidateId.Infrastructure.Data.Repositories
         public bool AddShoppingBasket(dynamic shoppingBasket, double totalProductCost = 0.0)
         {
             dynamic userBasket = new ExpandoObject();
-            userBasket.User = shoppingBasket.User;
-            userBasket.Basket = shoppingBasket.Basket;
+
+            userBasket.Products = shoppingBasket.Products;
+            userBasket.CreationDate = shoppingBasket.CreationDate;
             userBasket.Total = totalProductCost;
+            userBasket.User = new ExpandoObject();
+            userBasket.User.Id = shoppingBasket.User.Id;
 
             _shoppingBaskets.Add(shoppingBasket.User.Id, userBasket);
 

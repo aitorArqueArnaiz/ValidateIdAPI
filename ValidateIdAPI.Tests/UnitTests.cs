@@ -35,11 +35,8 @@ namespace ValidateId.Tests
         [SetUp]
         public void SetUp()
         {
-            _shoppingBasket = new ShoppingBasket(new User(), new Basket());
-            _shoppingBasket.Basket.Units = new Dictionary<int, string>() { { 2, "TheHobbit" }, { 5, "BreakingBad" } };
-
-            _shoppingBasket.User.Id = 353;
-            _shoppingBasket.User.Name = "User test";
+            _shoppingBasket = new ShoppingBasket(353);
+            _shoppingBasket.Products = new List<Product>() { new Product(2, "TheHobbit"), new Product(5, "BreakingBad") };
 
             var options = new DbContextOptionsBuilder<InMemmoryRepository>()
                 .UseInMemoryDatabase(Guid.NewGuid().ToString())
@@ -70,9 +67,9 @@ namespace ValidateId.Tests
             // Arrange
             var addBasketRequest = new AddUserBasketRequest()
             {
-                CreationDate = _shoppingBasket.Basket.CreationDate,
+                CreationDate = _shoppingBasket.CreationDate,
                 User = _shoppingBasket.User,
-                Units = _shoppingBasket.Basket.Units
+                Units = _shoppingBasket.Products
             };
 
 
@@ -85,8 +82,7 @@ namespace ValidateId.Tests
             Assert.True(result.response);
             Assert.AreEqual(_context.GetShoppingBaskets().Count, 1);
             Assert.AreEqual(basket.User.Id, _shoppingBasket.User.Id);
-            Assert.AreEqual(basket.User.Name, _shoppingBasket.User.Name);
-            Assert.AreEqual(basket.Basket.Units, _shoppingBasket.Basket.Units);
+            Assert.AreEqual(basket.Products, _shoppingBasket.Products);
             Assert.AreEqual(basket.Total, _totalProductCost);
         }
 
@@ -97,15 +93,15 @@ namespace ValidateId.Tests
         {
             var addBasketRequest_1 = new AddUserBasketRequest()
             {
-                CreationDate = _shoppingBasket.Basket.CreationDate,
+                CreationDate = _shoppingBasket.CreationDate,
                 User = _shoppingBasket.User,
-                Units = _shoppingBasket.Basket.Units
+                Units = _shoppingBasket.Products
             };
             var addBasketRequest_2 = new AddUserBasketRequest()
             {
-                CreationDate = _shoppingBasket.Basket.CreationDate,
+                CreationDate = _shoppingBasket.CreationDate,
                 User = _shoppingBasket.User,
-                Units = _shoppingBasket.Basket.Units
+                Units = _shoppingBasket.Products
             };
 
             // Act
@@ -121,12 +117,10 @@ namespace ValidateId.Tests
             Assert.NotNull(response);
             Assert.AreEqual(response.Poducts.Count, 2);
             Assert.AreEqual(response.Poducts[0].User.Id, 456);
-            Assert.AreEqual(response.Poducts[0].User.Name, _shoppingBasket.User.Name);
-            Assert.AreEqual(response.Poducts[0].Basket.Units, _shoppingBasket.Basket.Units);
+            Assert.AreEqual(response.Poducts[0].Products, _shoppingBasket.Products);
             Assert.AreEqual(response.Poducts[0].Total, _totalProductCost);
             Assert.AreEqual(response.Poducts[1].User.Id, 986);
-            Assert.AreEqual(response.Poducts[1].User.Name, _shoppingBasket.User.Name);
-            Assert.AreEqual(response.Poducts[1].Basket.Units, _shoppingBasket.Basket.Units);
+            Assert.AreEqual(response.Poducts[1].Products, _shoppingBasket.Products);
             Assert.AreEqual(response.Poducts[1].Total, _totalProductCost);
         }
 
