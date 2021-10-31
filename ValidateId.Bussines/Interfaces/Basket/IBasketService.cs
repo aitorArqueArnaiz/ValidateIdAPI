@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using ValidateId.Domain.DTOs.Basket;
-using ValidateId.Domain.Entities;
+﻿using ValidateId.Domain.DTOs.Basket;
 
 namespace ValidateId.Bussines.Interfaces.Basket
 {
@@ -13,7 +11,7 @@ namespace ValidateId.Bussines.Interfaces.Basket
 
         /// <summary>Method that gets all the shopping baskets existing in the current inMemmory data base.</summary>
         /// <returns>The list of all shopping baskets/products.</returns>
-        List<ShoppingBasket> GetAllShoppingBaskets();
+        GetAllProductsResponse GetAllShoppingBaskets();
 
     }
 }

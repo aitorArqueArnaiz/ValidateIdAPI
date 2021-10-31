@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Dynamic;
+using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using ValidateId.Infrastructure.Interfaces;
 
@@ -9,7 +10,7 @@ namespace ValidateId.Infrastructure.Data.Repositories
     {
         #region Class variables
 
-        public List<dynamic> _shoppingBaskets { get; set; }
+        public Dictionary<int, dynamic> _shoppingBaskets { get; set; }
 
         #endregion
 
@@ -30,23 +31,22 @@ namespace ValidateId.Infrastructure.Data.Repositories
 
         public void LoadShoppingBaskets()
         {
-            _shoppingBaskets = new List<dynamic>() { };
+            _shoppingBaskets = new Dictionary<int, dynamic>() { };
         }
 
         public List<dynamic> GetShoppingBaskets()
         {
-            return _shoppingBaskets;
+            return _shoppingBaskets.Select(kvp => kvp.Value).ToList();
         }
 
         public bool AddShoppingBasket(dynamic shoppingBasket, double totalProductCost = 0.0)
         {
             dynamic userBasket = new ExpandoObject();
-
             userBasket.User = shoppingBasket.User;
             userBasket.Basket = shoppingBasket.Basket;
             userBasket.Total = totalProductCost;
 
-            _shoppingBaskets.Add(userBasket);
+            _shoppingBaskets.Add(shoppingBasket.User.Id, userBasket);
 
             return true;
         }

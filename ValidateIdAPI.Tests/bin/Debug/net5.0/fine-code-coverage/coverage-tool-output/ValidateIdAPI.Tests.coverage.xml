@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0.5418" branch-rate="0.8409" version="1.9" timestamp="1635692188" lines-covered="110" lines-valid="203" branches-covered="37" branches-valid="44">
+<coverage line-rate="0.5445" branch-rate="0.8541" version="1.9" timestamp="1635695469" lines-covered="110" lines-valid="202" branches-covered="41" branches-valid="48">
   <sources>
     <source>C:\Users\aitor\</source>
   </sources>
@@ -193,9 +193,8 @@
                 <line number="40" hits="0" branch="False" />
                 <line number="41" hits="0" branch="False" />
                 <line number="42" hits="0" branch="False" />
-                <line number="43" hits="0" branch="False" />
+                <line number="44" hits="0" branch="False" />
                 <line number="45" hits="0" branch="False" />
-                <line number="46" hits="0" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(Microsoft.Extensions.Logging.ILogger`1&lt;ValidateIdAPI.Controllers.ShoppingCartController&gt;,ValidateId.Bussines.Interfaces.Basket.IBasketService)" line-rate="0" branch-rate="0" complexity="2">
@@ -227,9 +226,8 @@
             <line number="40" hits="0" branch="False" />
             <line number="41" hits="0" branch="False" />
             <line number="42" hits="0" branch="False" />
-            <line number="43" hits="0" branch="False" />
+            <line number="44" hits="0" branch="False" />
             <line number="45" hits="0" branch="False" />
-            <line number="46" hits="0" branch="False" />
             <line number="19" hits="0" branch="False" />
             <line number="20" hits="0" branch="False" />
             <line number="21" hits="0" branch="False" />
@@ -246,32 +244,32 @@
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
+                <line number="49" hits="0" branch="False" />
                 <line number="50" hits="0" branch="False" />
-                <line number="51" hits="0" branch="False" />
+                <line number="52" hits="0" branch="False" />
                 <line number="53" hits="0" branch="False" />
                 <line number="54" hits="0" branch="False" />
                 <line number="55" hits="0" branch="False" />
                 <line number="56" hits="0" branch="False" />
                 <line number="57" hits="0" branch="False" />
                 <line number="58" hits="0" branch="False" />
-                <line number="59" hits="0" branch="False" />
+                <line number="60" hits="0" branch="False" />
                 <line number="61" hits="0" branch="False" />
-                <line number="62" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
+            <line number="49" hits="0" branch="False" />
             <line number="50" hits="0" branch="False" />
-            <line number="51" hits="0" branch="False" />
+            <line number="52" hits="0" branch="False" />
             <line number="53" hits="0" branch="False" />
             <line number="54" hits="0" branch="False" />
             <line number="55" hits="0" branch="False" />
             <line number="56" hits="0" branch="False" />
             <line number="57" hits="0" branch="False" />
             <line number="58" hits="0" branch="False" />
-            <line number="59" hits="0" branch="False" />
+            <line number="60" hits="0" branch="False" />
             <line number="61" hits="0" branch="False" />
-            <line number="62" hits="0" branch="False" />
           </lines>
         </class>
       </classes>
@@ -402,39 +400,39 @@
           <methods>
             <method name="get_CreationDate" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="22" hits="4" branch="False" />
+                <line number="19" hits="4" branch="False" />
               </lines>
             </method>
             <method name="get_Units" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="25" hits="7" branch="False" />
+                <line number="22" hits="7" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
+                <line number="25" hits="2" branch="False" />
+                <line number="26" hits="2" branch="False" />
+                <line number="27" hits="2" branch="False" />
                 <line number="28" hits="2" branch="False" />
                 <line number="29" hits="2" branch="False" />
-                <line number="30" hits="2" branch="False" />
-                <line number="31" hits="2" branch="False" />
-                <line number="32" hits="2" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="22" hits="4" branch="False" />
-            <line number="25" hits="7" branch="False" />
+            <line number="19" hits="4" branch="False" />
+            <line number="22" hits="7" branch="False" />
+            <line number="25" hits="2" branch="False" />
+            <line number="26" hits="2" branch="False" />
+            <line number="27" hits="2" branch="False" />
             <line number="28" hits="2" branch="False" />
             <line number="29" hits="2" branch="False" />
-            <line number="30" hits="2" branch="False" />
-            <line number="31" hits="2" branch="False" />
-            <line number="32" hits="2" branch="False" />
           </lines>
         </class>
         <class name="ValidateId.Domain.Entities.ShoppingBasket" filename="Downloads\ValidateIdAPI\ValidateId.Domain\Entities\ShoppingBasket.cs" line-rate="1" branch-rate="1" complexity="3">
           <methods>
             <method name="get_User" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="8" branch="False" />
+                <line number="9" hits="9" branch="False" />
               </lines>
             </method>
             <method name="get_Basket" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -453,7 +451,7 @@
             </method>
           </methods>
           <lines>
-            <line number="9" hits="8" branch="False" />
+            <line number="9" hits="9" branch="False" />
             <line number="12" hits="7" branch="False" />
             <line number="14" hits="2" branch="False" />
             <line number="15" hits="2" branch="False" />
@@ -520,7 +518,7 @@
           <methods>
             <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="7" branch="False" />
+                <line number="11" hits="8" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -532,7 +530,7 @@
             </method>
           </methods>
           <lines>
-            <line number="11" hits="7" branch="False" />
+            <line number="11" hits="8" branch="False" />
             <line number="7" hits="4" branch="False" />
             <line number="8" hits="4" branch="False" />
             <line number="9" hits="4" branch="False" />
@@ -540,39 +538,39 @@
         </class>
       </classes>
     </package>
-    <package name="ValidateId.Infrastructure" line-rate="0.9047" branch-rate="1" complexity="17">
+    <package name="ValidateId.Infrastructure" line-rate="0.9047" branch-rate="1" complexity="21">
       <classes>
-        <class name="ValidateId.Infrastructure.Data.Repositories.InMemmoryRepository" filename="Downloads\ValidateIdAPI\ValidateId.Infrastructure\Data\Repositories\InMemmoryRepository.cs" line-rate="0.9047" branch-rate="1" complexity="17">
+        <class name="ValidateId.Infrastructure.Data.Repositories.InMemmoryRepository" filename="Downloads\ValidateIdAPI\ValidateId.Infrastructure\Data\Repositories\InMemmoryRepository.cs" line-rate="0.9047" branch-rate="1" complexity="21">
           <methods>
             <method name="get__shoppingBaskets" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="12" hits="4" branch="False" />
+                <line number="13" hits="4" branch="False" />
               </lines>
             </method>
             <method name="OnModelCreating" signature="(Microsoft.EntityFrameworkCore.ModelBuilder)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="23" hits="0" branch="False" />
                 <line number="24" hits="0" branch="False" />
+                <line number="25" hits="0" branch="False" />
               </lines>
             </method>
             <method name="LoadShoppingBaskets" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="32" hits="1" branch="False" />
                 <line number="33" hits="1" branch="False" />
                 <line number="34" hits="1" branch="False" />
+                <line number="35" hits="1" branch="False" />
               </lines>
             </method>
             <method name="GetShoppingBaskets" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="37" hits="2" branch="False" />
                 <line number="38" hits="2" branch="False" />
-                <line number="39" hits="2" branch="False" />
+                <line number="39" hits="4" branch="False" />
+                <line number="40" hits="2" branch="False" />
               </lines>
             </method>
-            <method name="AddShoppingBasket" signature="(System.Object,System.Double)" line-rate="1" branch-rate="1" complexity="12">
+            <method name="AddShoppingBasket" signature="(System.Object,System.Double)" line-rate="1" branch-rate="1" complexity="16">
               <lines>
-                <line number="42" hits="1" branch="False" />
                 <line number="43" hits="1" branch="False" />
+                <line number="44" hits="1" branch="False" />
                 <line number="45" hits="1" branch="True" condition-coverage="100% (4/4)">
                   <conditions>
                     <condition number="12" type="jump" coverage="100%" />
@@ -590,9 +588,11 @@
                     <condition number="342" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="49" hits="1" branch="True" condition-coverage="100% (2/2)">
+                <line number="49" hits="1" branch="True" condition-coverage="100% (6/6)">
                   <conditions>
                     <condition number="431" type="jump" coverage="100%" />
+                    <condition number="533" type="jump" coverage="100%" />
+                    <condition number="604" type="jump" coverage="100%" />
                   </conditions>
                 </line>
                 <line number="51" hits="1" branch="False" />
@@ -601,25 +601,25 @@
             </method>
             <method name=".ctor" signature="(Microsoft.EntityFrameworkCore.DbContextOptions)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="18" hits="1" branch="False" />
                 <line number="19" hits="1" branch="False" />
                 <line number="20" hits="1" branch="False" />
                 <line number="21" hits="1" branch="False" />
+                <line number="22" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="12" hits="4" branch="False" />
-            <line number="23" hits="0" branch="False" />
+            <line number="13" hits="4" branch="False" />
             <line number="24" hits="0" branch="False" />
-            <line number="32" hits="1" branch="False" />
+            <line number="25" hits="0" branch="False" />
             <line number="33" hits="1" branch="False" />
             <line number="34" hits="1" branch="False" />
-            <line number="37" hits="2" branch="False" />
+            <line number="35" hits="1" branch="False" />
             <line number="38" hits="2" branch="False" />
-            <line number="39" hits="2" branch="False" />
-            <line number="42" hits="1" branch="False" />
+            <line number="39" hits="4" branch="False" />
+            <line number="40" hits="2" branch="False" />
             <line number="43" hits="1" branch="False" />
+            <line number="44" hits="1" branch="False" />
             <line number="45" hits="1" branch="True" condition-coverage="100% (4/4)">
               <conditions>
                 <condition number="12" type="jump" coverage="100%" />
@@ -637,17 +637,19 @@
                 <condition number="342" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="49" hits="1" branch="True" condition-coverage="100% (2/2)">
+            <line number="49" hits="1" branch="True" condition-coverage="100% (6/6)">
               <conditions>
                 <condition number="431" type="jump" coverage="100%" />
+                <condition number="533" type="jump" coverage="100%" />
+                <condition number="604" type="jump" coverage="100%" />
               </conditions>
             </line>
             <line number="51" hits="1" branch="False" />
             <line number="52" hits="1" branch="False" />
-            <line number="18" hits="1" branch="False" />
             <line number="19" hits="1" branch="False" />
             <line number="20" hits="1" branch="False" />
             <line number="21" hits="1" branch="False" />
+            <line number="22" hits="1" branch="False" />
           </lines>
         </class>
       </classes>

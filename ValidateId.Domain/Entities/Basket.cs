@@ -12,13 +12,11 @@ namespace ValidateId.Domain.Entities
         /*
          * Example of employee DTO
              * {
-                "CreationDate": "2000/01/01",
-                 "Total": 56.99,
                  "Units": "{""2"":""The Hobbit"",""5"":""Breaking Bad""}"
               }
          */
 
-        [JsonProperty("CreationDate")]
+        [JsonIgnore]
         public string CreationDate { get; set; }
 
         [JsonProperty("Units")]

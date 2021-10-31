@@ -31,7 +31,6 @@ namespace ValidateIdAPI.Controllers
             {
                 AddUserBasketRequest addShoppingBasketRequest = new AddUserBasketRequest()
                 {
-                    CreationDate = shoppingBasket.Basket.CreationDate,
                     User = shoppingBasket.User,
                     Units = shoppingBasket.Basket.Units
                 };
@@ -48,10 +47,13 @@ namespace ValidateIdAPI.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            List<ShoppingBasket> baskets = new() { };
+            GetAllProductsResponse baskets = new();
             try
             {
                 baskets = _basketService.GetAllShoppingBaskets();
+                foreach(var product in baskets.Poducts)
+                {
+                }
             }
             catch(Exception error)
             {

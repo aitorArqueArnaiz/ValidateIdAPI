@@ -45,9 +45,11 @@ namespace ValidateId.Bussines.Services.Basket
 
         }
 
-        public List<ShoppingBasket> GetAllShoppingBaskets()
+        public GetAllProductsResponse GetAllShoppingBaskets()
         {
-            return null;
+            var response = new GetAllProductsResponse();
+            response.Poducts = _basketRepository.GetShoppingBaskets();
+            return response;
         }
 
         #endregion
