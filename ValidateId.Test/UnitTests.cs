@@ -1,9 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using ValidateId.Domain.Entities;
 using ValidateId.Infrastructure.Data.Repositories;
 
-namespace ValidateId.Test
+namespace ValidateId.Tests
 {
     [TestFixture]
     public class UnitTests
