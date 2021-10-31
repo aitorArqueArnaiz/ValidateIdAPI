@@ -32,7 +32,7 @@ namespace ValidateId.Bussines.Services.Basket
             var response = new AdduserBasketResponse();
 
             // Convert AddUserBasketRequest into Shopping basket
-            var shoppingBasket = ConvertAdduserRequestToShoppingCart(shoppingBasketRequest);
+            ShoppingBasket shoppingBasket = ConvertAdduserRequestToShoppingCart(shoppingBasketRequest);
 
             response.response = _basketRepository.AddShoppingBasket(shoppingBasket);
             response.message = $"Basket succesfully added for user {shoppingBasketRequest.User.Id}";

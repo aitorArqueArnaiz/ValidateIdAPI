@@ -42,9 +42,8 @@ namespace ValidateId.Infrastructure.Data.Repositories
         {
             dynamic userBasket = new ExpandoObject();
 
-            userBasket.CreationDate = shoppingBasket.Basket.CreationDate;
-            userBasket.Units = shoppingBasket.Basket.Units;
-            userBasket.Total = shoppingBasket.Basket.Total;
+            userBasket.User = shoppingBasket.User;
+            userBasket.Basket = shoppingBasket.Basket;
 
             _shoppingBaskets.Add(userBasket);
 
