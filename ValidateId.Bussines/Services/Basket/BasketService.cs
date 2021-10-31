@@ -70,7 +70,6 @@ namespace ValidateId.Bussines.Services.Basket
             };
             shoppingBasket.Id = primaryKey.Next();
             shoppingBasket.Products = shoppingBasketRequest.Units;
-            shoppingBasket.CreationDate = shoppingBasketRequest.CreationDate;
 
             return shoppingBasket;
         }
@@ -84,7 +83,7 @@ namespace ValidateId.Bussines.Services.Basket
 
             foreach(var product in units)
             {
-                var price = (int)Enum.Parse(typeof(ProductPrice), Enum.GetName(product.Name));
+                var price = (int)Enum.Parse(typeof(ProductPrice), product.Name);
                 totalCost += product.Quantity * price;
             }
             return totalCost;

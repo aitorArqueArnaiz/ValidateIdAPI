@@ -12,12 +12,12 @@ namespace ValidateId.Domain.Entities
         public int Quantity { get; set; }
 
         [JsonProperty("Name")]
-        public ProductId Name { get; set; }
+        public string Name { get; set; }
 
         public Product(int quantity, string name)
         {
             Quantity = quantity;
-            Name = (ProductId)Enum.Parse(typeof(ProductId), name);
+            Name = name;
         }
     }
 }

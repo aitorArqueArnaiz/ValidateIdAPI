@@ -1,0 +1,195 @@
+TpTrace Verbose: 0 : 400, 1, 2021/10/31, 20:08:23.432, 438061590821, testhost.dll, Version: 16.9.4
+TpTrace Information: 0 : 400, 1, 2021/10/31, 20:08:23.440, 438061630846, testhost.dll, DefaultEngineInvoker.Invoke: Testhost process started with args :[--port, 56907],[--endpoint, 127.0.0.1:056907],[--role, client],[--parentprocessid, 6984],[--diag, C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI.Tests\bin\Debug\net5.0\fine-code-coverage\coverage-tool-output\diagnostics.host.21-10-31_20-08-23_22422_4.log],[--tracelevel, 4],[--datacollectionport, 56906],[--telemetryoptedin, false]
+TpTrace Information: 0 : 400, 1, 2021/10/31, 20:08:23.475, 438061989898, testhost.dll, Setting up debug trace listener.
+TpTrace Verbose: 0 : 400, 1, 2021/10/31, 20:08:23.476, 438061991833, testhost.dll, TestPlatformTraceListener.Setup: Replacing listener 0 with TestHostTraceListener.
+TpTrace Verbose: 0 : 400, 1, 2021/10/31, 20:08:23.476, 438061992382, testhost.dll, TestPlatformTraceListener.Setup: Added test platform trace listener.
+TpTrace Information: 0 : 400, 1, 2021/10/31, 20:08:23.476, 438061996266, testhost.dll, DefaultEngineInvoker.SetParentProcessExitCallback: Monitoring parent process with id: '6984'
+TpTrace Information: 0 : 400, 1, 2021/10/31, 20:08:23.482, 438062051637, testhost.dll, DefaultEngineInvoker.GetConnectionInfo: Initialize communication on endpoint address: '127.0.0.1:056907'
+TpTrace Information: 0 : 400, 1, 2021/10/31, 20:08:23.494, 438062174141, testhost.dll, SocketClient.Start: connecting to server endpoint: 127.0.0.1:056907
+TpTrace Information: 0 : 400, 1, 2021/10/31, 20:08:23.500, 438062231711, testhost.dll, DefaultEngineInvoker.ConnectToDatacollector: Connecting to datacollector, port: 56906
+TpTrace Information: 0 : 400, 6, 2021/10/31, 20:08:23.501, 438062243415, testhost.dll, SocketClient.OnServerConnected: connected to server endpoint: 127.0.0.1:056907
+TpTrace Verbose: 0 : 400, 6, 2021/10/31, 20:08:23.502, 438062257261, testhost.dll, Connected to server, and starting MessageLoopAsync
+TpTrace Information: 0 : 400, 1, 2021/10/31, 20:08:23.502, 438062257993, testhost.dll, Trying to connect to server on socket : 127.0.0.1:56906 
+TpTrace Verbose: 0 : 400, 1, 2021/10/31, 20:08:23.503, 438062260591, testhost.dll, SocketCommunicationManager : SetupClientAsync : Attempting to connect to the server.
+TpTrace Information: 0 : 400, 10, 2021/10/31, 20:08:23.504, 438062272796, testhost.dll, Connected to the server successfully 
+TpTrace Information: 0 : 400, 10, 2021/10/31, 20:08:23.504, 438062273554, testhost.dll, Using the buffer size of 16384 bytes
+TpTrace Verbose: 0 : 400, 6, 2021/10/31, 20:08:23.504, 438062276834, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:56907 localEndPoint: [::ffff:127.0.0.1]:56909
+TpTrace Information: 0 : 400, 1, 2021/10/31, 20:08:23.504, 438062277478, testhost.dll, DefaultEngineInvoker.Invoke: Start Request Processing.
+TpTrace Verbose: 0 : 400, 6, 2021/10/31, 20:08:23.504, 438062279473, testhost.dll, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: [::ffff:127.0.0.1]:56907 localEndPoint: [::ffff:127.0.0.1]:56909
+TpTrace Information: 0 : 400, 11, 2021/10/31, 20:08:23.505, 438062286205, testhost.dll, DefaultEngineInvoker.StartProcessingAsync: Connected to vstest.console, Starting process requests.
+TpTrace Information: 0 : 400, 6, 2021/10/31, 20:08:23.603, 438063268521, testhost.dll, TestRequestHandler.ProcessRequests: received message: (ProtocolVersion) -> 5
+TpTrace Verbose: 0 : 400, 6, 2021/10/31, 20:08:23.630, 438063535490, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":5,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"Registrando diagnóstico de TestHost en el archivo: C:\\Users\\aitor\\Downloads\\ValidateIdAPI\\ValidateIdAPI.Tests\\bin\\Debug\\net5.0\\fine-code-coverage\\coverage-tool-output\\diagnostics.host.21-10-31_20-08-23_22422_4.log"}}
+TpTrace Verbose: 0 : 400, 6, 2021/10/31, 20:08:23.630, 438063537774, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:56907 localEndPoint: [::ffff:127.0.0.1]:56909
+TpTrace Verbose: 0 : 400, 6, 2021/10/31, 20:08:23.630, 438063539459, testhost.dll, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: [::ffff:127.0.0.1]:56907 localEndPoint: [::ffff:127.0.0.1]:56909
+TpTrace Information: 0 : 400, 6, 2021/10/31, 20:08:23.634, 438063573689, testhost.dll, TestRequestHandler.ProcessRequests: received message: (TestExecution.Initialize) -> [
+  "C:\\Users\\aitor\\Downloads\\ValidateIdAPI\\ValidateIdAPI.Tests\\bin\\Debug\\net5.0\\fine-code-coverage\\build-output\\NUnit3.TestAdapter.dll"
+]
+TpTrace Information: 0 : 400, 6, 2021/10/31, 20:08:23.634, 438063574851, testhost.dll, Execution Session Initialize.
+TpTrace Verbose: 0 : 400, 6, 2021/10/31, 20:08:23.639, 438063629220, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:56907 localEndPoint: [::ffff:127.0.0.1]:56909
+TpTrace Verbose: 0 : 400, 6, 2021/10/31, 20:08:23.640, 438063630882, testhost.dll, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: [::ffff:127.0.0.1]:56907 localEndPoint: [::ffff:127.0.0.1]:56909
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.641, 438063648364, testhost.dll, TestExecutorService: Loading the extensions
+TpTrace Information: 0 : 400, 6, 2021/10/31, 20:08:23.642, 438063656921, testhost.dll, TestRequestHandler.ProcessRequests: received message: (TestExecution.StartWithSources) -> {
+  "AdapterSourceMap": {
+    "_none_": [
+      "C:\\Users\\aitor\\Downloads\\ValidateIdAPI\\ValidateIdAPI.Tests\\bin\\Debug\\net5.0\\fine-code-coverage\\build-output\\ValidateIdAPI.Tests.dll"
+    ]
+  },
+  "RunSettings": "<RunSettings>\r\n  <RunConfiguration>\r\n    <ResultsDirectory>C:\\Users\\aitor\\Downloads\\ValidateIdAPI\\ValidateIdAPI.Tests\\bin\\Debug\\net5.0\\fine-code-coverage\\coverage-tool-output</ResultsDirectory>\r\n    <TargetPlatform>X64</TargetPlatform>\r\n    <TargetFrameworkVersion>.NETCoreApp,Version=v5.0</TargetFrameworkVersion>\r\n    <DesignMode>False</DesignMode>\r\n    <CollectSourceInformation>False</CollectSourceInformation>\r\n  </RunConfiguration>\r\n  <LoggerRunSettings>\r\n    <Loggers>\r\n      <Logger friendlyName=\"blame\" enabled=\"True\" />\r\n      <Logger friendlyName=\"Console\" uri=\"logger://microsoft/TestPlatform/ConsoleLogger/v1\" assemblyQualifiedName=\"Microsoft.VisualStudio.TestPlatform.CommandLine.Internal.ConsoleLogger, vstest.console, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a\" codeBase=\"C:\\Program Files\\dotnet\\sdk\\5.0.400\\vstest.console.dll\" enabled=\"True\" />\r\n    </Loggers>\r\n  </LoggerRunSettings>\r\n  <DataCollectionRunSettings>\r\n    <DataCollectors>\r\n      <DataCollector friendlyName=\"blame\" enabled=\"True\">\r\n        <Configuration>\r\n          <ResultsDirectory>C:\\Users\\aitor\\Downloads\\ValidateIdAPI\\ValidateIdAPI.Tests\\bin\\Debug\\net5.0\\fine-code-coverage\\coverage-tool-output</ResultsDirectory>\r\n        </Configuration>\r\n      </DataCollector>\r\n    </DataCollectors>\r\n  </DataCollectionRunSettings>\r\n</RunSettings>",
+  "TestExecutionContext": {
+    "FrequencyOfRunStatsChangeEvent": 10,
+    "RunStatsChangeEventTimeout": "00:00:01.5000000",
+    "InIsolation": false,
+    "KeepAlive": false,
+    "AreTestCaseLevelEventsRequired": false,
+    "IsDebug": false,
+    "TestCaseFilter": null,
+    "FilterOptions": null
+  },
+  "Package": null
+}
+TpTrace Information: 0 : 400, 6, 2021/10/31, 20:08:23.642, 438063658070, testhost.dll, Execution started.
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.643, 438063662591, testhost.dll, TestPluginCache.DiscoverTestExtensions: finding test extensions in assemblies ends with: TestAdapter.dll TPluginInfo: Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.Utilities.TestExecutorPluginInformation TExtension: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.644, 438063671393, testhost.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.644, 438063675042, testhost.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI.Tests\bin\Debug\net5.0\fine-code-coverage\build-output\NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.644, 438063675664, testhost.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:23.646, 438063693514, testhost.dll, AssemblyResolver.ctor: Creating AssemblyResolver with searchDirectories C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI.Tests\bin\Debug\net5.0\fine-code-coverage\build-output
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.647, 438063704854, testhost.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using extension path.
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.647, 438063706114, testhost.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.647, 438063706592, testhost.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI.Tests\bin\Debug\net5.0\fine-code-coverage\build-output\NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.647, 438063707013, testhost.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.647, 438063707720, testhost.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using allExtensionPaths: C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI.Tests\bin\Debug\net5.0\fine-code-coverage\build-output\NUnit3.TestAdapter.dll
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:23.648, 438063714773, testhost.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI.Tests\bin\Debug\net5.0\fine-code-coverage\build-output
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:23.651, 438063748367, testhost.dll, AssemblyResolver.OnResolve: NUnit3.TestAdapter: Resolving assembly.
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:23.653, 438063761961, testhost.dll, AssemblyResolver.OnResolve: Resolved assembly: NUnit3.TestAdapter, from path: C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI.Tests\bin\Debug\net5.0\fine-code-coverage\build-output\NUnit3.TestAdapter.dll
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:23.655, 438063784391, testhost.dll, AssemblyResolver.OnResolve: nunit.engine.api: Resolving assembly.
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:23.656, 438063791154, testhost.dll, AssemblyResolver.OnResolve: Resolved assembly: nunit.engine.api, from path: C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI.Tests\bin\Debug\net5.0\fine-code-coverage\build-output\nunit.engine.api.dll
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.660, 438063831137, testhost.dll, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.660, 438063835150, testhost.dll, TestPluginCache: Discoverers are ''.
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.660, 438063835944, testhost.dll, TestPluginCache: Executors are 'executor://NUnit3TestExecutor'.
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.660, 438063836650, testhost.dll, TestPluginCache: Executors2 are ''.
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.660, 438063837340, testhost.dll, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.660, 438063838006, testhost.dll, TestPluginCache: Loggers are ''.
+TpTrace Verbose: 0 : 400, 6, 2021/10/31, 20:08:23.662, 438063854589, testhost.dll, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: [::ffff:127.0.0.1]:56907 localEndPoint: [::ffff:127.0.0.1]:56909
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.663, 438063861611, testhost.dll, TestPluginCache.DiscoverTestExtensions: finding test extensions in assemblies ends with: TestAdapter.dll TPluginInfo: Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.Utilities.TestExecutorPluginInformation2 TExtension: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor2
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.663, 438063864011, testhost.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.663, 438063864646, testhost.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI.Tests\bin\Debug\net5.0\fine-code-coverage\build-output\NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.663, 438063865088, testhost.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:23.663, 438063866932, testhost.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI.Tests\bin\Debug\net5.0\fine-code-coverage\build-output
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.663, 438063867496, testhost.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using extension path.
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.663, 438063867929, testhost.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.663, 438063868383, testhost.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI.Tests\bin\Debug\net5.0\fine-code-coverage\build-output\NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.663, 438063868822, testhost.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.663, 438063869235, testhost.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using allExtensionPaths: C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI.Tests\bin\Debug\net5.0\fine-code-coverage\build-output\NUnit3.TestAdapter.dll
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:23.663, 438063869742, testhost.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI.Tests\bin\Debug\net5.0\fine-code-coverage\build-output
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.664, 438063872351, testhost.dll, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.664, 438063872872, testhost.dll, TestPluginCache: Discoverers are ''.
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.664, 438063873334, testhost.dll, TestPluginCache: Executors are 'executor://NUnit3TestExecutor'.
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.664, 438063873977, testhost.dll, TestPluginCache: Executors2 are ''.
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.664, 438063874411, testhost.dll, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.664, 438063874790, testhost.dll, TestPluginCache: Loggers are ''.
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:23.668, 438063914946, testhost.dll, TestPluginManager.CreateTestExtension: Attempting to load test extension: NUnit.VisualStudio.TestAdapter.NUnit3TestExecutor
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.669, 438063920798, testhost.dll, TestExecutorExtensionManager: Loading executor NUnit.VisualStudio.TestAdapter.NUnit3TestExecutor
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.669, 438063921501, testhost.dll, TestExecutorService: Loaded the executors
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.669, 438063928566, testhost.dll, TestPluginCache.DiscoverTestExtensions: finding test extensions in assemblies ends with: TestAdapter.dll TPluginInfo: Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.Utilities.TestSettingsProviderPluginInformation TExtension: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ISettingsProvider
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.669, 438063930052, testhost.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.670, 438063930626, testhost.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI.Tests\bin\Debug\net5.0\fine-code-coverage\build-output\NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.670, 438063931067, testhost.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:23.670, 438063932573, testhost.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI.Tests\bin\Debug\net5.0\fine-code-coverage\build-output
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.670, 438063933066, testhost.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using extension path.
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.670, 438063933503, testhost.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.670, 438063933978, testhost.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI.Tests\bin\Debug\net5.0\fine-code-coverage\build-output\NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.670, 438063934395, testhost.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.670, 438063934816, testhost.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using allExtensionPaths: C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI.Tests\bin\Debug\net5.0\fine-code-coverage\build-output\NUnit3.TestAdapter.dll
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:23.670, 438063935325, testhost.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI.Tests\bin\Debug\net5.0\fine-code-coverage\build-output
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.670, 438063937642, testhost.dll, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.670, 438063938242, testhost.dll, TestPluginCache: Discoverers are ''.
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.670, 438063938693, testhost.dll, TestPluginCache: Executors are 'executor://NUnit3TestExecutor'.
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.670, 438063939690, testhost.dll, TestPluginCache: Executors2 are ''.
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.671, 438063940763, testhost.dll, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.671, 438063941228, testhost.dll, TestPluginCache: Loggers are ''.
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.671, 438063949218, testhost.dll, TestExecutorService: Loaded the settings providers
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:23.671, 438063949898, testhost.dll, TestExecutorService: Loaded the extensions
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:23.688, 438064117582, testhost.dll, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Common.resources: Resolving assembly.
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:23.688, 438064119525, testhost.dll, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Common.resources: Failed to load assembly.
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:23.732, 438064550915, testhost.dll, TestDiscoveryManager: Discovering tests from sources C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI.Tests\bin\Debug\net5.0\fine-code-coverage\build-output\ValidateIdAPI.Tests.dll
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.733, 438064566996, testhost.dll, TestPluginCache.DiscoverTestExtensions: finding test extensions in assemblies ends with: TestAdapter.dll TPluginInfo: Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.Utilities.TestDiscovererPluginInformation TExtension: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestDiscoverer
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.733, 438064568499, testhost.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.733, 438064569088, testhost.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI.Tests\bin\Debug\net5.0\fine-code-coverage\build-output\NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.733, 438064569502, testhost.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:23.734, 438064570762, testhost.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI.Tests\bin\Debug\net5.0\fine-code-coverage\build-output
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.734, 438064571256, testhost.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using extension path.
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.734, 438064571666, testhost.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.734, 438064572045, testhost.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI.Tests\bin\Debug\net5.0\fine-code-coverage\build-output\NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.734, 438064572512, testhost.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.734, 438064572911, testhost.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using allExtensionPaths: C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI.Tests\bin\Debug\net5.0\fine-code-coverage\build-output\NUnit3.TestAdapter.dll
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:23.734, 438064573386, testhost.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI.Tests\bin\Debug\net5.0\fine-code-coverage\build-output
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:23.736, 438064590343, testhost.dll, AssemblyResolver.OnResolve: System.ComponentModel.Primitives.resources: Resolving assembly.
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:23.736, 438064592004, testhost.dll, AssemblyResolver.OnResolve: System.ComponentModel.Primitives.resources: Failed to load assembly.
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.736, 438064594947, testhost.dll, CurrentDomain_AssemblyResolve: Resolving assembly 'System.ComponentModel.Primitives.resources'.
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:23.736, 438064595823, testhost.dll, AssemblyResolver.OnResolve: System.ComponentModel.Primitives.resources: Resolving assembly.
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:23.736, 438064596387, testhost.dll, AssemblyResolver.OnResolve: System.ComponentModel.Primitives.resources: Resolved from cache.
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.736, 438064596859, testhost.dll, CurrentDomain_AssemblyResolve: Resolving assembly 'System.ComponentModel.Primitives.resources'.
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.736, 438064597332, testhost.dll, CurrentDomainAssemblyResolve: Failed to resolve assembly 'System.ComponentModel.Primitives.resources'.
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.737, 438064604794, testhost.dll, CurrentDomainAssemblyResolve: Failed to resolve assembly 'System.ComponentModel.Primitives.resources'.
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:23.737, 438064608758, testhost.dll, AssemblyResolver.OnResolve: System.ComponentModel.Primitives.resources: Resolving assembly.
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:23.737, 438064609399, testhost.dll, AssemblyResolver.OnResolve: System.ComponentModel.Primitives.resources: Resolved from cache.
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.738, 438064610292, testhost.dll, CurrentDomain_AssemblyResolve: Resolving assembly 'System.ComponentModel.Primitives.resources'.
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.738, 438064610768, testhost.dll, CurrentDomainAssemblyResolve: Failed to resolve assembly 'System.ComponentModel.Primitives.resources'.
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.738, 438064617590, testhost.dll, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.738, 438064618340, testhost.dll, TestPluginCache: Discoverers are 'NUnit.VisualStudio.TestAdapter.NUnit3TestDiscoverer, NUnit3.TestAdapter, Version=3.17.0.0, Culture=neutral, PublicKeyToken=4cb40d35494691ac'.
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.738, 438064618834, testhost.dll, TestPluginCache: Executors are 'executor://NUnit3TestExecutor'.
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.738, 438064619250, testhost.dll, TestPluginCache: Executors2 are ''.
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.738, 438064619650, testhost.dll, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.738, 438064620026, testhost.dll, TestPluginCache: Loggers are ''.
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:23.745, 438064681757, testhost.dll, PEReaderHelper.GetAssemblyType: Determined assemblyType:'Managed' for source: 'C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI.Tests\bin\Debug\net5.0\fine-code-coverage\build-output\ValidateIdAPI.Tests.dll'
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.749, 438064728178, testhost.dll, BaseRunTests.RunTestInternalWithExecutors: Running tests for executor://NUnit3TestExecutor
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:23.751, 438064740537, testhost.dll, AssemblyResolver.OnResolve: nunit.engine: Resolving assembly.
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:23.751, 438064746783, testhost.dll, AssemblyResolver.OnResolve: Resolved assembly: nunit.engine, from path: C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI.Tests\bin\Debug\net5.0\fine-code-coverage\build-output\nunit.engine.dll
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:23.751, 438064747781, testhost.dll, AssemblyResolver.OnResolve: nunit.engine.core: Resolving assembly.
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:23.752, 438064753219, testhost.dll, AssemblyResolver.OnResolve: Resolved assembly: nunit.engine.core, from path: C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI.Tests\bin\Debug\net5.0\fine-code-coverage\build-output\nunit.engine.core.dll
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:23.758, 438064819999, testhost.dll, NUnit Adapter 3.17.0.0: Test execution started
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.759, 438064821407, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":5,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"NUnit Adapter 3.17.0.0: Test execution started"}}
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:23.784, 438065074335, testhost.dll, Running all tests in C:\Users\aitor\Downloads\ValidateIdAPI\ValidateIdAPI.Tests\bin\Debug\net5.0\fine-code-coverage\build-output\ValidateIdAPI.Tests.dll
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.784, 438065075735, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":5,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"Running all tests in C:\\Users\\aitor\\Downloads\\ValidateIdAPI\\ValidateIdAPI.Tests\\bin\\Debug\\net5.0\\fine-code-coverage\\build-output\\ValidateIdAPI.Tests.dll"}}
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:23.790, 438065138425, testhost.dll, AssemblyResolver.OnResolve: Mono.Cecil: Resolving assembly.
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:23.791, 438065140315, testhost.dll, AssemblyResolver.OnResolve: Mono.Cecil: Failed to load assembly.
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:23.931, 438066545956, testhost.dll,    NUnit3TestExecutor discovered 2 of 2 NUnit test cases
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:23.931, 438066547433, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":5,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"   NUnit3TestExecutor discovered 2 of 2 NUnit test cases"}}
+TpTrace Verbose: 0 : 400, 12, 2021/10/31, 20:08:23.957, 438066802463, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: ValidateId.Tests.UnitTests.AddShoppingBasket_ToUser_Test.
+TpTrace Information: 0 : 400, 13, 2021/10/31, 20:08:24.068, 438067913056, testhost.dll, AssemblyResolver.OnResolve: Microsoft.EntityFrameworkCore.resources: Resolving assembly.
+TpTrace Information: 0 : 400, 13, 2021/10/31, 20:08:24.068, 438067914775, testhost.dll, AssemblyResolver.OnResolve: Microsoft.EntityFrameworkCore.resources: Failed to load assembly.
+TpTrace Information: 0 : 400, 13, 2021/10/31, 20:08:24.068, 438067920007, testhost.dll, AssemblyResolver.OnResolve: Microsoft.EntityFrameworkCore.resources: Resolving assembly.
+TpTrace Information: 0 : 400, 13, 2021/10/31, 20:08:24.069, 438067920588, testhost.dll, AssemblyResolver.OnResolve: Microsoft.EntityFrameworkCore.resources: Resolved from cache.
+TpTrace Information: 0 : 400, 13, 2021/10/31, 20:08:24.120, 438068432536, testhost.dll, AssemblyResolver.OnResolve: Microsoft.CSharp.resources: Resolving assembly.
+TpTrace Information: 0 : 400, 13, 2021/10/31, 20:08:24.120, 438068434294, testhost.dll, AssemblyResolver.OnResolve: Microsoft.CSharp.resources: Failed to load assembly.
+TpTrace Information: 0 : 400, 13, 2021/10/31, 20:08:24.120, 438068436088, testhost.dll, AssemblyResolver.OnResolve: Microsoft.CSharp.resources: Resolving assembly.
+TpTrace Information: 0 : 400, 13, 2021/10/31, 20:08:24.120, 438068436581, testhost.dll, AssemblyResolver.OnResolve: Microsoft.CSharp.resources: Resolved from cache.
+TpTrace Verbose: 0 : 400, 12, 2021/10/31, 20:08:24.157, 438068801218, testhost.dll, TestExecutionRecorder.RecordEnd: test: ValidateId.Tests.UnitTests.AddShoppingBasket_ToUser_Test execution completed.
+TpTrace Verbose: 0 : 400, 12, 2021/10/31, 20:08:24.169, 438068925314, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: ValidateId.Tests.UnitTests.AddShoppingBasket_ToUser_Test.
+TpTrace Warning: 0 : 400, 12, 2021/10/31, 20:08:24.172, 438068958463, testhost.dll, TestRunCache: InProgressTests is null
+TpTrace Warning: 0 : 400, 12, 2021/10/31, 20:08:24.172, 438068959982, testhost.dll, TestRunCache: No test found corresponding to testResult 'AddShoppingBasket_ToUser_Test' in inProgress list.
+TpTrace Verbose: 0 : 400, 12, 2021/10/31, 20:08:24.173, 438068961347, testhost.dll, TestExecutionRecorder.RecordStart: Starting test: ValidateId.Tests.UnitTests.GetProducts_Test.
+TpTrace Verbose: 0 : 400, 12, 2021/10/31, 20:08:24.174, 438068972416, testhost.dll, TestExecutionRecorder.RecordEnd: test: ValidateId.Tests.UnitTests.GetProducts_Test execution completed.
+TpTrace Verbose: 0 : 400, 12, 2021/10/31, 20:08:24.175, 438068980426, testhost.dll, TestExecutionRecorder.RecordResult: Received result for test: ValidateId.Tests.UnitTests.GetProducts_Test.
+TpTrace Warning: 0 : 400, 12, 2021/10/31, 20:08:24.175, 438068981206, testhost.dll, TestRunCache: InProgressTests is null
+TpTrace Warning: 0 : 400, 12, 2021/10/31, 20:08:24.175, 438068981646, testhost.dll, TestRunCache: No test found corresponding to testResult 'GetProducts_Test' in inProgress list.
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:24.178, 438069011053, testhost.dll, NUnit Adapter 3.17.0.0: Test execution complete
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:24.178, 438069012329, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":5,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"NUnit Adapter 3.17.0.0: Test execution complete"}}
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:24.181, 438069048833, testhost.dll, BaseRunTests.RunTestInternalWithExecutors: Completed running tests for executor://NUnit3TestExecutor
+TpTrace Information: 0 : 400, 4, 2021/10/31, 20:08:24.184, 438069076488, testhost.dll, Sending test run complete
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:24.210, 438069333183, testhost.dll, TestRequestHandler.SendData:  sending data from testhost: {"Version":5,"MessageType":"TestExecution.Completed","Payload":{"TestRunCompleteArgs":{"TestRunStatistics":{"ExecutedTests":2,"Stats":{"Passed":2}},"IsCanceled":false,"IsAborted":false,"Error":null,"AttachmentSets":[],"ElapsedTimeInRunningTests":"00:00:00.4354390","Metrics":{}},"LastRunTests":{"NewTestResults":[{"TestCase":{"Id":"76af518e-69a4-0761-9145-dbd805ce0511","FullyQualifiedName":"ValidateId.Tests.UnitTests.AddShoppingBasket_ToUser_Test","DisplayName":"AddShoppingBasket_ToUser_Test","ExecutorUri":"executor://NUnit3TestExecutor","Source":"C:\\Users\\aitor\\Downloads\\ValidateIdAPI\\ValidateIdAPI.Tests\\bin\\Debug\\net5.0\\fine-code-coverage\\build-output\\ValidateIdAPI.Tests.dll","CodeFilePath":null,"LineNumber":0,"Properties":[]},"Attachments":[],"Outcome":1,"ErrorMessage":null,"ErrorStackTrace":null,"DisplayName":"AddShoppingBasket_ToUser_Test","Messages":[],"ComputerName":"DESKTOP-L1JPBBO","Duration":"00:00:00.1938260","StartTime":"2021-10-31T19:08:23.9566373+00:00","EndTime":"2021-10-31T19:08:24.150387+00:00","Properties":[]},{"TestCase":{"Id":"24ca7aad-97ec-5709-461c-5edb1ec083f0","FullyQualifiedName":"ValidateId.Tests.UnitTests.GetProducts_Test","DisplayName":"GetProducts_Test","ExecutorUri":"executor://NUnit3TestExecutor","Source":"C:\\Users\\aitor\\Downloads\\ValidateIdAPI\\ValidateIdAPI.Tests\\bin\\Debug\\net5.0\\fine-code-coverage\\build-output\\ValidateIdAPI.Tests.dll","CodeFilePath":null,"LineNumber":0,"Properties":[]},"Attachments":[],"Outcome":1,"ErrorMessage":null,"ErrorStackTrace":null,"DisplayName":"GetProducts_Test","Messages":[],"ComputerName":"DESKTOP-L1JPBBO","Duration":"00:00:00.0028620","StartTime":"2021-10-31T19:08:24.1518596+00:00","EndTime":"2021-10-31T19:08:24.1547215+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":2,"Stats":{"Passed":2}},"ActiveTests":[]},"RunAttachments":[],"ExecutorUris":["executor://nunit3testexecutor/"]}}
+TpTrace Verbose: 0 : 400, 4, 2021/10/31, 20:08:24.210, 438069336182, testhost.dll, BaseRunTests.RunTests: Run is complete.
+TpTrace Verbose: 0 : 400, 6, 2021/10/31, 20:08:24.211, 438069342418, testhost.dll, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: [::ffff:127.0.0.1]:56907 localEndPoint: [::ffff:127.0.0.1]:56909
+TpTrace Information: 0 : 400, 6, 2021/10/31, 20:08:24.211, 438069345998, testhost.dll, TestRequestHandler.ProcessRequests: received message: (TestSession.Terminate) -> null
+TpTrace Information: 0 : 400, 6, 2021/10/31, 20:08:24.211, 438069346515, testhost.dll, Session End message received from server. Closing the connection.
+TpTrace Information: 0 : 400, 6, 2021/10/31, 20:08:24.211, 438069348742, testhost.dll, SocketClient.Stop: Stop communication from server endpoint: 127.0.0.1:056907
+TpTrace Information: 0 : 400, 6, 2021/10/31, 20:08:24.211, 438069349250, testhost.dll, SocketClient: Stop: Cancellation requested. Stopping message loop.
+TpTrace Verbose: 0 : 400, 6, 2021/10/31, 20:08:24.212, 438069350107, testhost.dll, LengthPrefixCommunicationChannel.Dispose: Dispose reader and writer.
+TpTrace Information: 0 : 400, 6, 2021/10/31, 20:08:24.212, 438069350628, testhost.dll, Closing the connection !
+TpTrace Information: 0 : 400, 6, 2021/10/31, 20:08:24.212, 438069352404, testhost.dll, SocketClient.PrivateStop: Stop communication from server endpoint: 127.0.0.1:056907, error:
+TpTrace Information: 0 : 400, 1, 2021/10/31, 20:08:24.212, 438069354459, testhost.dll, Closing the connection !
+TpTrace Information: 0 : 400, 1, 2021/10/31, 20:08:24.212, 438069355199, testhost.dll, SocketClient.Stop: Stop communication from server endpoint: 127.0.0.1:056907
+TpTrace Verbose: 0 : 400, 6, 2021/10/31, 20:08:24.212, 438069354517, testhost.dll, LengthPrefixCommunicationChannel.Dispose: Dispose reader and writer.
+TpTrace Verbose: 0 : 400, 6, 2021/10/31, 20:08:24.212, 438069356336, testhost.dll, TcpClientExtensions.MessageLoopAsync: exiting MessageLoopAsync remoteEndPoint: [::ffff:127.0.0.1]:56907 localEndPoint: [::ffff:127.0.0.1]:56909
+TpTrace Verbose: 0 : 400, 1, 2021/10/31, 20:08:24.212, 438069355645, testhost.dll, LengthPrefixCommunicationChannel.Dispose: Dispose reader and writer.
+TpTrace Information: 0 : 400, 1, 2021/10/31, 20:08:24.212, 438069358101, testhost.dll, Testhost process exiting.

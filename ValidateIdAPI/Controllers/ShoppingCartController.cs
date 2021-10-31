@@ -23,16 +23,14 @@ namespace ValidateIdAPI.Controllers
         }
 
         [HttpPost]
-        public ActionResult<AdduserBasketResponse> AddItem([FromBody] ShoppingBasket shoppingBasket)
+        public ActionResult<AdduserBasketResponse> AddItem([FromBody] AddUserBasketRequest shoppingBasket)
         {
             AdduserBasketResponse shoppingBasketAddedToUser;
             try
             {
-                AddUserBasketRequest addShoppingBasketRequest = new AddUserBasketRequest()
-                {
-                    Units = shoppingBasket.Products
-                };
-                shoppingBasketAddedToUser = _basketService.AddShoppingBasketToUser(addShoppingBasketRequest);
+                var userId = new Random();
+                shoppingBasket.User.Id = userId.Next(1, 999);
+                shoppingBasketAddedToUser = _basketService.AddShoppingBasketToUser(shoppingBasket);
             }
             catch(Exception error)
             {
