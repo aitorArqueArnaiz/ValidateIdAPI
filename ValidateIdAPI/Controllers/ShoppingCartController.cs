@@ -47,6 +47,10 @@ namespace ValidateIdAPI.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
+            /* Example of log
+             * [BASKET CREATED]: Created[<"01-03-2021">], UserID
+               [ITEM ADDED TO SHOPPING CART]: Added[<"01-03-2021">], UserID, ProductID, Quantity[, Price[<€12.00>]
+             */
             GetAllProductsResponse baskets = new();
             try
             {
