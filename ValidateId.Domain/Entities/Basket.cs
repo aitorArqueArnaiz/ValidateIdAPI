@@ -3,6 +3,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using ValidateId.Domain.Base;
+using static ValidateId.Domain.Shared.Enums;
 
 namespace ValidateId.Domain.Entities
 {
@@ -21,13 +22,13 @@ namespace ValidateId.Domain.Entities
         public string CreationDate { get; set; }
 
         [JsonProperty("Units")]
-        public Dictionary<int, string> Units { get; set; }
+        public Dictionary<int, ProductId> Units { get; set; }
 
         public double Total { get; set; }
 
         public Basket()
         {
-            Units = new Dictionary<int, string>();
+            Units = new Dictionary<int, ProductId>();
             CreationDate = DateTime.Now.ToString("yyyy/MM/dd");
             Total = double.MinValue;
         }

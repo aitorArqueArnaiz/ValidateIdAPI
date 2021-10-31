@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using static ValidateId.Domain.Shared.Enums;
 
 namespace ValidateId.Domain.DTOs.Basket
 {
@@ -6,7 +7,7 @@ namespace ValidateId.Domain.DTOs.Basket
     {
         public string CreationDate { get; set; }
 
-        public Dictionary<int, string> Units { get; set; }
+        public Dictionary<int, ProductId> Units { get; set; }
 
         public double Total { get; set; }
     }
