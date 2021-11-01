@@ -74,7 +74,7 @@ namespace ValidateId.Bussines.Services.Basket
             return shoppingBasket;
         }
 
-        /// <summary>Method that calculates thw total product cost of the basket.</summary>
+        /// <summary>Method that calculates the total product cost of the basket.</summary>
         /// <param name="units">The list of products.</param>
         /// <returns>The total cost of the basket.</returns>
         private double CalculateTotalProductCost(List<Product> units)
@@ -87,6 +87,12 @@ namespace ValidateId.Bussines.Services.Basket
                 totalCost += product.Quantity * price;
             }
             return totalCost;
+        }
+
+        public double CalculateProductCost(string productName, int quantity)
+        {
+            return quantity * (int)Enum.Parse(typeof(ProductPrice), productName);
+
         }
 
         #endregion

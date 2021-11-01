@@ -13,5 +13,11 @@ namespace ValidateId.Bussines.Interfaces.Basket
         /// <returns>The list of all shopping baskets/products.</returns>
         GetAllProductsResponse GetAllShoppingBaskets();
 
+        /// <summary>Method that calculates the product cost.</summary>
+        /// <param name="productName">The product name.</param>
+        /// <param name="quantity">The product quantity/units.</param>
+        /// <returns>The cost of the product.</returns>
+        double CalculateProductCost(string productName, int quantity);
+
     }
 }

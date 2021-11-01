@@ -63,7 +63,10 @@ namespace ValidateIdAPI.Controllers
                 foreach (var product in baskets.Poducts)
                 {
                     _logger.LogTrace($"[BASKET CREATED]: Created[<{product.CreationDate}>], {product.User.Id}");
-                    _logger.LogTrace($"[ITEM ADDED TO SHOPPING CART]: Added[<{product.CreationDate}>], {product.User.Id}, {product.Id}, {product.Quantity}, [, Price[<{product}>]");
+                    foreach(var unit in product.Products)
+                    {
+                        _logger.LogTrace($"[ITEM ADDED TO SHOPPING CART]: Added[<{product.CreationDate}>], {product.User.Id}, {unit.Id}, {unit.Quantity}, [, Price[<{_basketService.CalculateProductCost(unit.Name, unit.Quantity)}>]");
+                    }
                 }
             }
             catch (Exception error)
