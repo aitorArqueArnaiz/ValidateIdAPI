@@ -60,14 +60,7 @@ namespace ValidateIdAPI.Controllers
             try
             {
                 baskets = _basketService.GetAllShoppingBaskets();
-                foreach (var product in baskets.Poducts)
-                {
-                    _logger.LogInformation($"[BASKET CREATED]: CreatedDate : [<{product.CreationDate}>], UserId: {product.User.Id}");
-                    foreach(var unit in product.Products)
-                    {
-                        _logger.LogInformation($"[ITEM ADDED TO SHOPPING CART]: Added CreationDate : [<{product.CreationDate}>], UswerId : {product.User.Id}, ProductId . {unit.Id}, Product quantity : {unit.Quantity}, Price : [, Price[<{_basketService.CalculateProductCost(unit.Name, unit.Quantity)}>]");
-                    }
-                }
+                LogProducts(baskets);
             }
             catch (Exception error)
             {
@@ -75,6 +68,24 @@ namespace ValidateIdAPI.Controllers
                 throw new Exception(error.Message);
             }
             return Ok(baskets);
+        }
+
+        #endregion
+
+        #region Helper methods
+
+        private void LogProducts(GetAllProductsResponse baskets)
+        {
+            foreach (var product in baskets.Poducts)
+            {
+                _logger.LogInformation($"[BASKET CREATED]: CreatedDate : [<{product.CreationDate}>], UserId: {product.User.Id}");
+                foreach (var unit in product.Products)
+                {
+                    _logger.LogInformation($"[ITEM ADDED TO SHOPPING CART]: Added CreationDate : [<{product.CreationDate}>], " +
+                                            $"UswerId : {product.User.Id}, ProductId . {unit.Id}, Product quantity : {unit.Quantity}, " +
+                                            $"Price : [, Price[<{_basketService.CalculateProductCost(unit.Name, unit.Quantity)}>]");
+                }
+            }
         }
 
         #endregion
