@@ -62,10 +62,10 @@ namespace ValidateIdAPI.Controllers
                 baskets = _basketService.GetAllShoppingBaskets();
                 foreach (var product in baskets.Poducts)
                 {
-                    _logger.LogTrace($"[BASKET CREATED]: Created[<{product.CreationDate}>], {product.User.Id}");
+                    _logger.LogInformation($"[BASKET CREATED]: Created[<{product.CreationDate}>], {product.User.Id}");
                     foreach(var unit in product.Products)
                     {
-                        _logger.LogTrace($"[ITEM ADDED TO SHOPPING CART]: Added[<{product.CreationDate}>], {product.User.Id}, {unit.Id}, {unit.Quantity}, [, Price[<{_basketService.CalculateProductCost(unit.Name, unit.Quantity)}>]");
+                        _logger.LogInformation($"[ITEM ADDED TO SHOPPING CART]: Added[<{product.CreationDate}>], {product.User.Id}, {unit.Id}, {unit.Quantity}, [, Price[<{_basketService.CalculateProductCost(unit.Name, unit.Quantity)}>]");
                     }
                 }
             }
