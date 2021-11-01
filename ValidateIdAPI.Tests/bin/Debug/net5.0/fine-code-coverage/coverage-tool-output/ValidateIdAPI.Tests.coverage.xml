@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0.6111" branch-rate="0.8875" version="1.9" timestamp="1635707304" lines-covered="143" lines-valid="234" branches-covered="71" branches-valid="80">
+<coverage line-rate="0.6068" branch-rate="0.7395" version="1.9" timestamp="1635756652" lines-covered="142" lines-valid="234" branches-covered="71" branches-valid="96">
   <sources>
     <source>C:\Users\aitor\</source>
   </sources>
   <packages>
-    <package name="ValidateId.API" line-rate="0" branch-rate="0" complexity="14">
+    <package name="ValidateId.API" line-rate="0" branch-rate="0" complexity="30">
       <classes>
         <class name="ErrorHandlingFilter" filename="Downloads\ValidateIdAPI\ValidateIdAPI\Exceptions\ErrorHandlingFilter.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
@@ -82,105 +82,108 @@
           <methods>
             <method name="get_Configuration" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="21" hits="0" branch="False" />
+                <line number="22" hits="0" branch="False" />
               </lines>
             </method>
             <method name="ConfigureServices" signature="(Microsoft.Extensions.DependencyInjection.IServiceCollection)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="25" hits="0" branch="False" />
                 <line number="26" hits="0" branch="False" />
-                <line number="28" hits="0" branch="False" />
+                <line number="27" hits="0" branch="False" />
                 <line number="29" hits="0" branch="False" />
                 <line number="30" hits="0" branch="False" />
                 <line number="31" hits="0" branch="False" />
                 <line number="32" hits="0" branch="False" />
-                <line number="35" hits="0" branch="False" />
+                <line number="33" hits="0" branch="False" />
                 <line number="36" hits="0" branch="False" />
-                <line number="39" hits="0" branch="False" />
+                <line number="37" hits="0" branch="False" />
                 <line number="40" hits="0" branch="False" />
                 <line number="41" hits="0" branch="False" />
                 <line number="42" hits="0" branch="False" />
                 <line number="43" hits="0" branch="False" />
+                <line number="46" hits="0" branch="False" />
+                <line number="47" hits="0" branch="False" />
               </lines>
             </method>
             <method name="Configure" signature="(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)" line-rate="0" branch-rate="0" complexity="2">
               <lines>
-                <line number="47" hits="0" branch="False" />
-                <line number="48" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="51" hits="0" branch="False" />
+                <line number="52" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
                     <condition number="9" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="49" hits="0" branch="False" />
-                <line number="50" hits="0" branch="False" />
-                <line number="51" hits="0" branch="False" />
-                <line number="52" hits="0" branch="False" />
                 <line number="53" hits="0" branch="False" />
+                <line number="54" hits="0" branch="False" />
                 <line number="55" hits="0" branch="False" />
+                <line number="56" hits="0" branch="False" />
                 <line number="57" hits="0" branch="False" />
                 <line number="59" hits="0" branch="False" />
                 <line number="61" hits="0" branch="False" />
-                <line number="62" hits="0" branch="False" />
                 <line number="63" hits="0" branch="False" />
-                <line number="64" hits="0" branch="False" />
                 <line number="65" hits="0" branch="False" />
+                <line number="66" hits="0" branch="False" />
+                <line number="67" hits="0" branch="False" />
+                <line number="68" hits="0" branch="False" />
+                <line number="69" hits="0" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(Microsoft.Extensions.Configuration.IConfiguration)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="16" hits="0" branch="False" />
                 <line number="17" hits="0" branch="False" />
                 <line number="18" hits="0" branch="False" />
                 <line number="19" hits="0" branch="False" />
+                <line number="20" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="21" hits="0" branch="False" />
-            <line number="25" hits="0" branch="False" />
+            <line number="22" hits="0" branch="False" />
             <line number="26" hits="0" branch="False" />
-            <line number="28" hits="0" branch="False" />
+            <line number="27" hits="0" branch="False" />
             <line number="29" hits="0" branch="False" />
             <line number="30" hits="0" branch="False" />
             <line number="31" hits="0" branch="False" />
             <line number="32" hits="0" branch="False" />
-            <line number="35" hits="0" branch="False" />
+            <line number="33" hits="0" branch="False" />
             <line number="36" hits="0" branch="False" />
-            <line number="39" hits="0" branch="False" />
+            <line number="37" hits="0" branch="False" />
             <line number="40" hits="0" branch="False" />
             <line number="41" hits="0" branch="False" />
             <line number="42" hits="0" branch="False" />
             <line number="43" hits="0" branch="False" />
+            <line number="46" hits="0" branch="False" />
             <line number="47" hits="0" branch="False" />
-            <line number="48" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="51" hits="0" branch="False" />
+            <line number="52" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
                 <condition number="9" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="49" hits="0" branch="False" />
-            <line number="50" hits="0" branch="False" />
-            <line number="51" hits="0" branch="False" />
-            <line number="52" hits="0" branch="False" />
             <line number="53" hits="0" branch="False" />
+            <line number="54" hits="0" branch="False" />
             <line number="55" hits="0" branch="False" />
+            <line number="56" hits="0" branch="False" />
             <line number="57" hits="0" branch="False" />
             <line number="59" hits="0" branch="False" />
             <line number="61" hits="0" branch="False" />
-            <line number="62" hits="0" branch="False" />
             <line number="63" hits="0" branch="False" />
-            <line number="64" hits="0" branch="False" />
             <line number="65" hits="0" branch="False" />
-            <line number="16" hits="0" branch="False" />
+            <line number="66" hits="0" branch="False" />
+            <line number="67" hits="0" branch="False" />
+            <line number="68" hits="0" branch="False" />
+            <line number="69" hits="0" branch="False" />
             <line number="17" hits="0" branch="False" />
             <line number="18" hits="0" branch="False" />
             <line number="19" hits="0" branch="False" />
+            <line number="20" hits="0" branch="False" />
           </lines>
         </class>
         <class name="ValidateIdAPI.Controllers.ShoppingCartController" filename="Downloads\ValidateIdAPI\ValidateIdAPI\Controllers\ShoppingCartController.cs" line-rate="0" branch-rate="0" complexity="3">
           <methods>
-            <method name="AddItem" signature="(ValidateId.Domain.Entities.ShoppingBasket)" line-rate="0" branch-rate="1" complexity="1">
+            <method name="AddItem" signature="(ValidateId.Domain.DTOs.Basket.AddUserBasketRequest)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="27" hits="0" branch="False" />
+                <line number="26" hits="0" branch="False" />
+                <line number="29" hits="0" branch="False" />
                 <line number="30" hits="0" branch="False" />
                 <line number="31" hits="0" branch="False" />
                 <line number="32" hits="0" branch="False" />
@@ -189,30 +192,28 @@
                 <line number="35" hits="0" branch="False" />
                 <line number="36" hits="0" branch="False" />
                 <line number="37" hits="0" branch="False" />
-                <line number="38" hits="0" branch="False" />
                 <line number="39" hits="0" branch="False" />
                 <line number="40" hits="0" branch="False" />
-                <line number="42" hits="0" branch="False" />
-                <line number="43" hits="0" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(Microsoft.Extensions.Logging.ILogger`1&lt;ValidateIdAPI.Controllers.ShoppingCartController&gt;,ValidateId.Bussines.Interfaces.Basket.IBasketService)" line-rate="0" branch-rate="0" complexity="2">
               <lines>
+                <line number="17" hits="0" branch="False" />
                 <line number="18" hits="0" branch="False" />
                 <line number="19" hits="0" branch="False" />
                 <line number="20" hits="0" branch="False" />
-                <line number="21" hits="0" branch="False" />
-                <line number="22" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="21" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
                     <condition number="18" type="jump" coverage="0%" />
                   </conditions>
                 </line>
-                <line number="23" hits="0" branch="False" />
+                <line number="22" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="27" hits="0" branch="False" />
+            <line number="26" hits="0" branch="False" />
+            <line number="29" hits="0" branch="False" />
             <line number="30" hits="0" branch="False" />
             <line number="31" hits="0" branch="False" />
             <line number="32" hits="0" branch="False" />
@@ -221,34 +222,48 @@
             <line number="35" hits="0" branch="False" />
             <line number="36" hits="0" branch="False" />
             <line number="37" hits="0" branch="False" />
-            <line number="38" hits="0" branch="False" />
             <line number="39" hits="0" branch="False" />
             <line number="40" hits="0" branch="False" />
-            <line number="42" hits="0" branch="False" />
-            <line number="43" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
             <line number="18" hits="0" branch="False" />
             <line number="19" hits="0" branch="False" />
             <line number="20" hits="0" branch="False" />
-            <line number="21" hits="0" branch="False" />
-            <line number="22" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="21" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
                 <condition number="18" type="jump" coverage="0%" />
               </conditions>
             </line>
-            <line number="23" hits="0" branch="False" />
+            <line number="22" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="ValidateIdAPI.Controllers.ShoppingCartController/&lt;Get&gt;d__4" filename="Downloads\ValidateIdAPI\ValidateIdAPI\Controllers\ShoppingCartController.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="ValidateIdAPI.Controllers.ShoppingCartController/&lt;Get&gt;d__4" filename="Downloads\ValidateIdAPI\ValidateIdAPI\Controllers\ShoppingCartController.cs" line-rate="0" branch-rate="0" complexity="18">
           <methods>
-            <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="18">
               <lines>
-                <line number="47" hits="0" branch="False" />
+                <line number="44" hits="0" branch="False" />
+                <line number="49" hits="0" branch="False" />
+                <line number="51" hits="0" branch="False" />
                 <line number="52" hits="0" branch="False" />
-                <line number="54" hits="0" branch="False" />
-                <line number="55" hits="0" branch="False" />
-                <line number="56" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="53" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
-                    <condition number="104" type="jump" coverage="0%" />
+                    <condition number="842" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="54" hits="0" branch="False" />
+                <line number="55" hits="0" branch="True" condition-coverage="0% (0/6)">
+                  <conditions>
+                    <condition number="109" type="jump" coverage="0%" />
+                    <condition number="191" type="jump" coverage="0%" />
+                    <condition number="262" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="56" hits="0" branch="True" condition-coverage="0% (0/10)">
+                  <conditions>
+                    <condition number="389" type="jump" coverage="0%" />
+                    <condition number="474" type="jump" coverage="0%" />
+                    <condition number="545" type="jump" coverage="0%" />
+                    <condition number="635" type="jump" coverage="0%" />
+                    <condition number="720" type="jump" coverage="0%" />
                   </conditions>
                 </line>
                 <line number="57" hits="0" branch="False" />
@@ -257,20 +272,36 @@
                 <line number="60" hits="0" branch="False" />
                 <line number="61" hits="0" branch="False" />
                 <line number="62" hits="0" branch="False" />
-                <line number="63" hits="0" branch="False" />
+                <line number="64" hits="0" branch="False" />
                 <line number="65" hits="0" branch="False" />
-                <line number="66" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="47" hits="0" branch="False" />
+            <line number="44" hits="0" branch="False" />
+            <line number="49" hits="0" branch="False" />
+            <line number="51" hits="0" branch="False" />
             <line number="52" hits="0" branch="False" />
-            <line number="54" hits="0" branch="False" />
-            <line number="55" hits="0" branch="False" />
-            <line number="56" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="53" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
-                <condition number="104" type="jump" coverage="0%" />
+                <condition number="842" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="54" hits="0" branch="False" />
+            <line number="55" hits="0" branch="True" condition-coverage="0% (0/6)">
+              <conditions>
+                <condition number="109" type="jump" coverage="0%" />
+                <condition number="191" type="jump" coverage="0%" />
+                <condition number="262" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="56" hits="0" branch="True" condition-coverage="0% (0/10)">
+              <conditions>
+                <condition number="389" type="jump" coverage="0%" />
+                <condition number="474" type="jump" coverage="0%" />
+                <condition number="545" type="jump" coverage="0%" />
+                <condition number="635" type="jump" coverage="0%" />
+                <condition number="720" type="jump" coverage="0%" />
               </conditions>
             </line>
             <line number="57" hits="0" branch="False" />
@@ -279,9 +310,8 @@
             <line number="60" hits="0" branch="False" />
             <line number="61" hits="0" branch="False" />
             <line number="62" hits="0" branch="False" />
-            <line number="63" hits="0" branch="False" />
+            <line number="64" hits="0" branch="False" />
             <line number="65" hits="0" branch="False" />
-            <line number="66" hits="0" branch="False" />
           </lines>
         </class>
       </classes>
@@ -322,26 +352,25 @@
                 <line number="70" hits="3" branch="False" />
                 <line number="71" hits="3" branch="False" />
                 <line number="72" hits="3" branch="False" />
-                <line number="73" hits="3" branch="False" />
+                <line number="74" hits="3" branch="False" />
                 <line number="75" hits="3" branch="False" />
-                <line number="76" hits="3" branch="False" />
               </lines>
             </method>
             <method name="CalculateTotalProductCost" signature="(System.Collections.Generic.List`1&lt;ValidateId.Domain.Entities.Product&gt;)" line-rate="1" branch-rate="1" complexity="2">
               <lines>
+                <line number="81" hits="3" branch="False" />
                 <line number="82" hits="3" branch="False" />
-                <line number="83" hits="3" branch="False" />
-                <line number="85" hits="21" branch="True" condition-coverage="100% (2/2)">
+                <line number="84" hits="21" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="77" type="jump" coverage="100%" />
                   </conditions>
                 </line>
+                <line number="85" hits="6" branch="False" />
                 <line number="86" hits="6" branch="False" />
                 <line number="87" hits="6" branch="False" />
                 <line number="88" hits="6" branch="False" />
-                <line number="89" hits="6" branch="False" />
+                <line number="89" hits="3" branch="False" />
                 <line number="90" hits="3" branch="False" />
-                <line number="91" hits="3" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(ValidateId.Infrastructure.Interfaces.IRepository)" line-rate="1" branch-rate="0.5" complexity="2">
@@ -380,22 +409,21 @@
             <line number="70" hits="3" branch="False" />
             <line number="71" hits="3" branch="False" />
             <line number="72" hits="3" branch="False" />
-            <line number="73" hits="3" branch="False" />
+            <line number="74" hits="3" branch="False" />
             <line number="75" hits="3" branch="False" />
-            <line number="76" hits="3" branch="False" />
+            <line number="81" hits="3" branch="False" />
             <line number="82" hits="3" branch="False" />
-            <line number="83" hits="3" branch="False" />
-            <line number="85" hits="21" branch="True" condition-coverage="100% (2/2)">
+            <line number="84" hits="21" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="77" type="jump" coverage="100%" />
               </conditions>
             </line>
+            <line number="85" hits="6" branch="False" />
             <line number="86" hits="6" branch="False" />
             <line number="87" hits="6" branch="False" />
             <line number="88" hits="6" branch="False" />
-            <line number="89" hits="6" branch="False" />
+            <line number="89" hits="3" branch="False" />
             <line number="90" hits="3" branch="False" />
-            <line number="91" hits="3" branch="False" />
             <line number="22" hits="2" branch="False" />
             <line number="23" hits="2" branch="False" />
             <line number="24" hits="2" branch="True" condition-coverage="50% (1/2)">
@@ -446,7 +474,7 @@
           <methods>
             <method name="get_CreationDate" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="14" branch="False" />
+                <line number="11" hits="11" branch="False" />
               </lines>
             </method>
             <method name="get_Products" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -472,7 +500,7 @@
             </method>
           </methods>
           <lines>
-            <line number="11" hits="14" branch="False" />
+            <line number="11" hits="11" branch="False" />
             <line number="14" hits="19" branch="False" />
             <line number="17" hits="22" branch="False" />
             <line number="19" hits="5" branch="False" />
@@ -488,7 +516,7 @@
           <methods>
             <method name="get_CreationDate" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="6" branch="False" />
+                <line number="9" hits="3" branch="False" />
               </lines>
             </method>
             <method name="get_User" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -503,7 +531,7 @@
             </method>
           </methods>
           <lines>
-            <line number="9" hits="6" branch="False" />
+            <line number="9" hits="3" branch="False" />
             <line number="11" hits="12" branch="False" />
             <line number="13" hits="9" branch="False" />
           </lines>

@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using ValidateId.Bussines.Interfaces.Basket;
 using ValidateId.Bussines.Services.Basket;
@@ -40,6 +41,9 @@ namespace ValidateIdAPI
             {
                 options.Filters.Add(new ErrorHandlingFilter());
             });
+
+            // Add logging service
+            services.AddLogging(configure => configure.AddConsole());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
