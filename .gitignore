@@ -2,14 +2,10 @@
 obj
 .git
 
-ValidateIdAPI/ValidateId.Bussines/obj
-ValidateIdAPI/ValidateId.Bussines/bin
-
-ValidateIdAPI/ValidateId.Domain/obj
-ValidateIdAPI/ValidateId.Domain/bin
-
-ValidateIdAPI/ValidateId.Infrastructure/obj
-ValidateIdAPI/ValidateId.Infrastructure/bin
-
-ValidateIdAPI/ValidateIdAPI/obj
-ValidateIdAPI/ValidateIdAPI/bin
+ValidateId.Bussines/bin
+ValidateId.Domain/bin
+ValidateId.Infrastructure/bin
+ValidateIdAPI.Tests/bin
+ValidateIdAPI/bin
+bin
+obj
