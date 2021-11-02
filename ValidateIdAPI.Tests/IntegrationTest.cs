@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using Moq;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -27,9 +28,6 @@ namespace ValidateId.Tests
         // The data base context (infrastructure)
         private IRepository _context;
 
-        // The logger
-        private readonly ILogger<ShoppingCartController> _logger;
-
         // The service
         private IBasketService _basketService;
 
@@ -53,7 +51,9 @@ namespace ValidateId.Tests
 
             _context = new InMemmoryRepository(options);
             _basketService = new BasketService(_context);
-            _controller = new ShoppingCartController(_logger, _basketService);
+
+            var logger = Mock.Of<ILogger<ShoppingCartController>>();
+            _controller = new ShoppingCartController(logger, _basketService);
 
         }
 
