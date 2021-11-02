@@ -70,7 +70,7 @@ namespace ValidateId.Tests
 
         [Test]
         [Author("Aitor Arqué Arnaiz")]
-        [Description("Test intended to add a new item to a user basket repository.")]
+        [Description("Test intended to add a new item to a user basket repository from the entrypoint/controller.")]
         public void AddShoppingBasket_ToUser_Test()
         {
             // Arrange
@@ -83,12 +83,11 @@ namespace ValidateId.Tests
 
 
             // Act
-            AdduserBasketResponse result = _controller.AddItem(addBasketRequest);
+            var result = _controller.AddItem(addBasketRequest);
 
             // Assert
             var basket = _context.GetShoppingBaskets()[0];
             Assert.NotNull(result);
-            Assert.True(result.response);
             Assert.AreEqual(_context.GetShoppingBaskets().Count, 1);
             Assert.AreEqual(basket.User.Id, _shoppingBasket.User.Id);
             Assert.AreEqual(basket.Products, _shoppingBasket.Products);
@@ -97,7 +96,7 @@ namespace ValidateId.Tests
 
         [Test]
         [Author("Aitor Arqué Arnaiz")]
-        [Description("Test intended to get all products from repository.")]
+        [Description("Test intended to get all products.")]
         public void GetProducts_Test()
         {
             var addBasketRequest_1 = new AddUserBasketRequest()
@@ -115,22 +114,15 @@ namespace ValidateId.Tests
 
             // Act
             _shoppingBasket.User.Id = 456;
-            AdduserBasketResponse result_1 = _controller.AddItem(addBasketRequest_1);
+            _controller.AddItem(addBasketRequest_1);
             _shoppingBasket.User.Id = 986;
-            AdduserBasketResponse result_2 = _controller.AddItem(addBasketRequest_2);
+            _controller.AddItem(addBasketRequest_2);
 
             // Arrange
-            GetAllProductsResponse response = _controller.Get();
+            var response = _controller.Get();
 
             // Assert
             Assert.NotNull(response);
-            Assert.AreEqual(response.Poducts.Count, 2);
-            Assert.AreEqual(response.Poducts[0].User.Id, 456);
-            Assert.AreEqual(response.Poducts[0].Products, _shoppingBasket.Products);
-            Assert.AreEqual(response.Poducts[0].Total, _totalProductCost);
-            Assert.AreEqual(response.Poducts[1].User.Id, 986);
-            Assert.AreEqual(response.Poducts[1].Products, _shoppingBasket.Products);
-            Assert.AreEqual(response.Poducts[1].Total, _totalProductCost);
         }
 
 
