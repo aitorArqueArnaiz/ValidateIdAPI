@@ -34,6 +34,10 @@ namespace ValidateIdAPI.Controllers
         [HttpPost]
         public ActionResult<AdduserBasketResponse> AddItem([FromBody] AddUserBasketRequest shoppingBasket)
         {
+            if(shoppingBasket == null || shoppingBasket.Units.Count == 0)
+            {
+                return NotFound();
+            }
             AdduserBasketResponse shoppingBasketAddedToUser;
             try
             {

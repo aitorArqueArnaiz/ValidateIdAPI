@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Moq;
 using NUnit.Framework;
@@ -92,6 +93,29 @@ namespace ValidateId.Tests
             Assert.AreEqual(basket.User.Id, _shoppingBasket.User.Id);
             Assert.AreEqual(basket.Products, _shoppingBasket.Products);
             Assert.AreEqual(basket.Total, _totalProductCost);
+        }
+
+        [Test]
+        [Author("Aitor Arqué Arnaiz")]
+        [Description("Test intended to add an empty item into shopping basket.")]
+        [Ignore("Not found result compare not working correctly")]
+        public void AddEmptyShoppingBasket_ToUser_NotFound_Error_Test()
+        {
+            // Arrange
+            var addBasketRequest = new AddUserBasketRequest()
+            {
+                CreationDate = _shoppingBasket.CreationDate,
+                User = _shoppingBasket.User,
+                Units = new List<Product>()
+            };
+
+
+            // Act
+            var result = _controller.AddItem(addBasketRequest);
+
+            // Assert
+            var notFound = new NotFoundResult();
+            Assert.AreEqual(result.Result, notFound);
         }
 
         [Test]
